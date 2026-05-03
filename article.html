@@ -1,0 +1,252 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta name="description" content="Read Ramratan Padhy's detailed technical article on the mathematics behind 1.58-bit weights and how BitNet b1.58 works.">
+<link rel="canonical" href="https://ramratan.in/article.html">
+<title>RAMRATAN PADHY | The Editorial Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Work+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="styles.css" rel="stylesheet">
+
+<style>
+        .newspaper-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1.5rem
+        }
+        .rule-double {
+            border-top: 4px solid black;
+            border-bottom: 1px solid black;
+            padding: 4px 0;
+            height: 8px;
+            box-sizing: content-box
+        }
+        .grainy-overlay {
+            position: relative
+        }
+        .grainy-overlay::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuBl21jeIaZ1VXHpxSpEOHp3PgJaHB9Wye88qlUDfd0S82nhgL2MzYr0Ztewru8phMdl6p-QAi7QvUTPnnC1xoC6TvxPFuc5iVDJKiLnxiZHWM8EgacBgmk3CCDcqKi2S6EZ4aAzc0cPXF1LiD-LVFVaAPWC2XDzci_5Y_2HDbVuwtjuX63_4duO2p4tW34J8zLexTr6Hp2Ix_kWTIh62Wblobluu0LnWT23pxjzwq88gjdAURN2AuzGGmyshi6y51xvXnz1_c8afw);
+            opacity: 0.15;
+            pointer-events: none
+        }
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+            animation: marquee 30s linear infinite
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+<body class="bg-[#c5b395] text-on-surface font-body-md overflow-x-hidden grainy-overlay" data-mode="connect">
+<header class="bg-[#c5b395] dark:bg-stone-900 flex flex-col items-center w-full max-w-[1280px] mx-auto px-0 border-b border-black dark:border-stone-100 mb-0">
+<div class="flex justify-between w-full px-8 py-2 font-serif uppercase tracking-tighter text-black dark:text-stone-100 border-b border-black text-xs">
+<span>VOL. 1, NO. 1</span>
+<span class="font-bold">AMARAVATI EDITION</span>
+<span>EST. 1994</span>
+</div>
+<h1 class="text-5xl md:text-7xl font-black text-black dark:text-stone-100 border-b-4 border-black dark:border-stone-100 w-full text-center py-4 mb-2 font-serif uppercase tracking-tighter">
+            <a href="index.html">RAMRATAN PADHY</a>
+        </h1>
+<div class="flex justify-between w-full px-8 py-2 border-b border-black text-black dark:text-stone-100 font-serif uppercase tracking-tighter">
+<nav class="flex flex-wrap justify-center gap-4 md:gap-8">
+<a class="text-stone-800 dark:text-stone-400 font-bold underline decoration-2 underline-offset-4 hover:bg-black hover:text-[#c5b395] transition-colors duration-150" href="index.html">← RETURN TO FRONT PAGE</a>
+</nav>
+<div class="flex gap-4">
+<span>WEATHER: 72°F CLEAR</span>
+</div>
+</div>
+</header>
+<div class="bg-black dark:bg-stone-100 flex overflow-hidden whitespace-nowrap py-1 w-full relative z-10">
+<div class="animate-marquee flex gap-8">
+<span class="text-[#c5b395] dark:text-stone-900 font-serif italic text-sm tracking-widest Newsreader uppercase">
+                BREAKING NEWS: CURRENTLY OPEN FOR FULL-STACK OPPORTUNITIES — SPECIALIZING IN INTELLECTUAL BRUTALISM AND TACTILE INTERFACES — CONTACT VIA TELEGRAPH OR EMAIL —
+            </span>
+<span class="text-[#c5b395] dark:text-stone-900 font-serif italic text-sm tracking-widest Newsreader uppercase">
+                BREAKING NEWS: CURRENTLY OPEN FOR FULL-STACK OPPORTUNITIES — SPECIALIZING IN INTELLECTUAL BRUTALISM AND TACTILE INTERFACES — CONTACT VIA TELEGRAPH OR EMAIL —
+            </span>
+</div>
+</div>
+
+<main class="max-w-[800px] mx-auto px-4 mt-12 mb-16">
+    <article>
+        <header class="mb-8 border-b-4 border-black pb-4">
+            <h1 class="font-headline-xl text-5xl md:text-6xl text-black mb-4 uppercase leading-none font-black tracking-tighter">
+                The Mathematics That Make 1.58-bit Weights Work
+            </h1>
+            <h2 class="font-headline-md text-2xl text-black italic mb-6">
+                How BitNet b1.58 Survives Its Own Quantization
+            </h2>
+            <div class="flex items-center gap-4 font-meta-info text-sm uppercase tracking-widest border-t border-b border-black py-2">
+                <span>BY <span class="font-bold">RAMRATAN</span></span>
+                <span>|</span>
+                <span>MAR 19, 2026</span>
+            </div>
+        </header>
+
+        <div class="prose prose-stone prose-lg max-w-none font-body-md text-black leading-relaxed space-y-6 text-lg">
+            <p class="first-letter:text-6xl first-letter:font-black first-letter:float-left first-letter:mr-3 first-letter:mt-2">
+                Standard large language models are built on a foundation of high-fidelity math. They rely on float16 or bfloat16 weights, giving the network roughly 65,000 distinct values to represent each parameter. This method works because it has enormous numerical headroom. It can represent tiny calibrations, large corrections, and everything in between.
+            </p>
+            <p>
+                What BitNet b1.58 throws away all this expressiveness by compressing every decision a neural network can make into just three choices: push left, push right, or do nothing. It uses ternary weights, exactly three possible values: -1, 0, and +1. That equates to 1.58 bits of information per weight and roughly a 10x compression in size.
+            </p>
+            <p>
+                How does a model with only three possible weight values not collapse?
+            </p>
+            <p>
+                When I started scanning the actual weight tensors of the model, what I found wasn’t a near-miss or a clever hack. It was four distinct mathematical mechanisms operating in concert, each solving a different piece of the survival problem. This is a forensic account of what those mechanisms are, what the data revealed about them, and what the model independently invented for itself that never appeared in the original paper.
+            </p>
+
+            <h3 class="font-headline-md text-2xl font-bold mt-12 mb-4 border-b border-black pb-2 uppercase">Mechanism 1: Absmean Quantization</h3>
+            <p>
+                The first layer is how the model chooses to map its high-precision thoughts into ternary values. The first problem is if you just round every weight to the nearest integer, your choice of rounding boundary determines which weights survive and which get zeroed out. Small shifts in that boundary can wipe out important features or preserve noise. BitNet solves this with a formula (that actually got popularized after the release of BitNet in 2023).
+            </p>
+            <p>
+                The elegance of the Absmean scale is that it dynamically centers the distribution before rounding. This normalizes the distribution so that the rounding boundary sits at the natural center of what this particular layer’s weights actually look like.
+            </p>
+            
+            <table class="w-full text-left border-collapse border border-black my-6 text-sm">
+                <thead>
+                    <tr class="bg-black text-[#c5b395]">
+                        <th class="border border-black p-2">Layer</th>
+                        <th class="border border-black p-2">Mean |W|</th>
+                        <th class="border border-black p-2">Zero Ratio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td class="border border-black p-2">0</td><td class="border border-black p-2">1.2189</td><td class="border border-black p-2">50.83%</td></tr>
+                    <tr><td class="border border-black p-2">10</td><td class="border border-black p-2">1.6026</td><td class="border border-black p-2">50.87%</td></tr>
+                    <tr><td class="border border-black p-2">20</td><td class="border border-black p-2">1.8414</td><td class="border border-black p-2">48.54%</td></tr>
+                    <tr><td class="border border-black p-2">29</td><td class="border border-black p-2">1.1274</td><td class="border border-black p-2">42.36%</td></tr>
+                </tbody>
+            </table>
+
+            <p>
+                The zero ratio (proportion of weights that become exactly 0 after quantization) sits between 42% and 51% across all layers. Roughly half of all weights vanish. This sounds alarming, but it’s the mechanism working correctly. Since a zero weight contributes nothing to the matrix multiply (it gets skipped during the multiplication) this translates directly into speed.
+            </p>
+            <p>
+                The outlier data is equally revealing. In layers 10–20 — the middle of the network, where representational activity is highest, we see the most extreme weights. These outliers matter because the absmean scale is set by the bulk of the distribution. A small number of extreme weights get heavily clipped, while the majority is quantized with appropriate resolution. The model is implicitly deciding that the tail of its weight distribution is less important than faithful representation of the core.
+            </p>
+
+            <h3 class="font-headline-md text-2xl font-bold mt-12 mb-4 border-b border-black pb-2 uppercase">Mechanism 2: Weight Scale Tensors — Restoring What Quantization Takes Away</h3>
+            <p>
+                Quantizing to {-1, 0, +1} preserves direction and sign, but it obliterates magnitude. A weight that was 0.003 and a weight that was 0.847 both become +1 after ternary quantization they look identical but they represented completely different scales of influence. Without compensation, the outputs of every ternary layer would be uniformly scaled wrong.
+            </p>
+            <p>
+                To fix this, every linear layer is paired with a companion weight_scale bfloat16 tensor. At inference time, the model executes a restoration:
+            </p>
+            <div class="bg-black/5 p-4 border-l-4 border-black font-mono text-sm my-4 font-bold tracking-tight">
+                Output = (X * W_ternary) * weight_scale
+            </div>
+            <p>
+                The integer matrix multiply runs fast (no floating-point required), and then a single scalar multiplication restores the correct magnitude for that layer. Our scan of the inference checkpoint found 328,775,890 bfloat16 parameters dedicated to scales, norms, and embeddings, alongside 521,011,200 uint8 parameters storing the packed ternary weights. The total model is 1.178 GB, compared to roughly 3 GB for an equivalent fp16 model.
+            </p>
+            <p>
+                Interestingly, the data showed that attention layers require significantly more magnitude restoration than the MLP layers (average scale 2.1869). Because these scales are trained end-to-end, the model isn’t just learning what the ternary weights should be; it is simultaneously learning exactly how much to rescale the outputs to compensate for its own compression.
+            </p>
+
+            <h3 class="font-headline-md text-2xl font-bold mt-12 mb-4 border-b border-black pb-2 uppercase">Mechanism 3: Sub_norm as Adaptive Gain</h3>
+            <p>
+                This is where the forensic analysis produced something unexpected. BitNet has mostly followed the standard LLaMA-architecture, but this is where it deviates. Standard LLaMA-architecture models have two types of normalization: the pre-attention RMSNorm and the pre-FFN RMSNorm. When we mapped the full shape inventory of BitNet b1.58’s safetensors, we found two additional normalization tensors that don’t appear in any standard LLaMA variant:
+            </p>
+            <ul class="list-disc pl-6 space-y-2">
+                <li><code class="bg-black/5 px-1 py-0.5 border border-black font-bold">ffn_sub_norm</code>: shape [6912] — applied after the FFN ternary multiply</li>
+                <li><code class="bg-black/5 px-1 py-0.5 border border-black font-bold">attn_sub_norm</code>: shape [2560] — applied after the attention ternary multiply</li>
+            </ul>
+            <p>
+                When we audited the bf16 master weights layer by layer, what we found was not static normalization behavior. We found a systematic, monotonically increasing gain structure. Both the attention and FFN streams cross a “high gain” criticality threshold simultaneously. Before layer 14, sub_norm weights cluster near 1.0 (effectively no rescaling). After layer 14, they begin escalating in lockstep, reaching means of 9.32 (FFN) and 6.14 (attention) by the final layer.
+            </p>
+            <p>
+                Mathematics dictates that quantization error compounds across layers. When layer N quantizes its weights, it introduces a small error the difference between the true float weight and its ternary approximation. The output error of Layer N becomes the input error of Layer N+1. By the end of the network, the accumulated mathematical noise requires roughly seven times more gain than at the beginning to extract the true signal.
+            </p>
+            <p>
+                Layer 29’s attention sub_norm makes this concrete. Its average gain value is 6.14 while the variance across individual channels is 48.35. That’s an enormous spread. Compare that to layer 0, where every channel gets almost the same gain (variance near zero). What this means is that by layer 29, different channels inside the model have accumulated different amounts of error along the way which the model corrects individually, applying a unique gain value per channel rather than one blanket fix for the whole layer.
+            </p>
+
+            <h3 class="font-headline-md text-2xl font-bold mt-12 mb-4 border-b border-black pb-2 uppercase">Mechanism 4: RoPE Theta as Positional Headroom</h3>
+            <p>
+                To understand BitNet’s positional math, we first need to understand RoPE (Rotary Position Embedding). RoPE encodes position by rotating query and key vectors at frequencies that span a geometric range before attention is calculated. This makes the dot product naturally encode the relative distance between tokens. These rotations happen at different speeds: fast, high-frequency bands capture local context (adjacent words), while slow, low-frequency bands track long-range structure. The <code class="bg-black/5 px-1 py-0.5 border border-black font-bold">rope_theta</code> parameter controls this frequency spread. A larger theta stretches the slow bands into even longer wavelengths, dramatically increasing the model’s positional resolution over long distances.
+            </p>
+            <p>
+                This is where the fourth mechanism operates, positional encoding. We see during analysis that BitNet b1.58 uses <code class="bg-black/5 px-1 py-0.5 border border-black font-bold">rope_theta = 500000.0</code>. Standard LLaMA 2 uses <code class="bg-black/5 px-1 py-0.5 border border-black font-bold">rope_theta = 10000</code>. That's a 50× increase in the base frequency parameter.
+            </p>
+            <p>
+                With theta=10000 and a head dimension of 128, the highest-frequency band has a wavelength of 6.3 tokens and the lowest-frequency band tops out around 25,600 tokens. With theta=500000, the lowest band’s wavelength extends to 2,559,195 tokens which is far beyond any practical context length.
+            </p>
+            <p>
+                Our full saturation analysis at the model’s trained length of 4K tokens found:
+            </p>
+            <ul class="list-disc pl-6 space-y-2">
+                <li><strong>32 bands already wrapping (saturation >100%):</strong> these rotate so fast that they cycle multiple times across the context window. Band 0, the highest-frequency band, saturates at 65,189%, wrapping 651 times. This is intentional: local relationships are encoded through periodicity, not monotonic position.</li>
+                <li><strong>21 bands completely safe (&lt;10% saturation):</strong> these barely rotate at all within 4K tokens. They are essentially untouched positional reserve.</li>
+            </ul>
+            <p>
+                Extending to 8K tokens, 35 bands wrap. At 12K, 37 bands wrap. The critical observation is that only bands 32–42 (wavelengths 4K–15K) require interpolation when extending context beyond the trained length. Everything outside that narrow window either wraps by design or remains safe at any realistic length.
+            </p>
+            <p>
+                Dimension of information which layer does not compress, which is delivered through the rotary embeddings rather than through weights, arrives at every layer with maximum fidelity. High theta is positional headroom: it buys the model reserve encoding capacity in a dimension that quantization cannot touch.
+            </p>
+
+            <h3 class="font-headline-md text-2xl font-bold mt-12 mb-4 border-b border-black pb-2 uppercase">The Elegance of Self-Correction</h3>
+            <p>
+                BitNet b1.58 does not succeed because we forced a square peg into a round hole. It succeeds because these four mechanisms form an unbroken cascade of mathematical compensation.
+            </p>
+            <ol class="list-decimal pl-6 space-y-2 font-bold">
+                <li><span class="font-normal"><strong>Absmean quantization</strong> adapts the rounding boundary to each layer’s actual weight distribution, minimizing worst-case error given the data.</span></li>
+                <li><span class="font-normal"><strong>Weight scale tensors</strong> restore global magnitude after the ternary multiply, ensuring that the overall scale of activations stays correct.</span></li>
+                <li><span class="font-normal"><strong>Sub_norm layers</strong> restore per-channel magnitude with a learned, depth-aware gain schedule compensating for thirty layers of compounding quantization error using correction values the model derived entirely from training signal.</span></li>
+                <li><span class="font-normal"><strong>High RoPE theta</strong> ensures that positional relationships, the one dimension of information that bypasses weight compression entirely, arrive with maximum resolution.</span></li>
+            </ol>
+            <p>
+                That is the real answer to why BitNet b1.58 doesn’t collapse. It’s not that 1.58 bits is somehow enough. It’s that the architecture learned to continuously correct for the fact that it isn’t and by layer 29, the correction schedule it learned looks remarkably like what a human quantization engineer would have designed on purpose.
+            </p>
+        </div>
+
+        <!-- Comments Section -->
+        <div class="mt-16 pt-8 border-t-4 border-black">
+            <h3 class="font-headline-md text-headline-md text-black uppercase mb-8 text-center">READER COMMENTARY</h3>
+            <div id="disqus_thread"></div>
+            <script>
+                var disqus_config = function () {
+                    // this.page.url = PAGE_URL;  
+                    // this.page.identifier = PAGE_IDENTIFIER; 
+                };
+                (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://ramratan-portfolio.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </div>
+    </article>
+</main>
+
+<footer class="bg-black dark:bg-stone-100 flex flex-col items-center justify-center p-8 w-full mt-12 border-t-[4px] border-black">
+<div class="text-lg font-black text-[#c5b395] dark:text-stone-900 mb-4 font-serif uppercase tracking-tighter Newsreader">
+            RAMRATAN PADHY
+        </div>
+<div class="flex gap-6 mb-6">
+<a class="text-[#c5b395] dark:text-stone-900 opacity-80 hover:opacity-100 transition-opacity font-serif text-xs underline font-bold" href="https://www.linkedin.com/in/ramratan-ntlap/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+<a class="text-[#c5b395] dark:text-stone-900 opacity-80 hover:opacity-100 transition-opacity font-serif text-xs underline font-bold" href="https://github.com/consolelogram" target="_blank" rel="noopener noreferrer">GitHub</a>
+<a class="text-[#c5b395] dark:text-stone-900 opacity-80 hover:opacity-100 transition-opacity font-serif text-xs underline font-bold" href="https://x.com/IamRamratan" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
+<a class="text-[#c5b395] dark:text-stone-900 opacity-80 hover:opacity-100 transition-opacity font-serif text-xs underline font-bold" href="mailto:ramratanpadhy59@gmail.com">Email</a>
+</div>
+<p class="text-[#c5b395] dark:text-stone-900 font-serif text-xs Newsreader tracking-widest text-center opacity-60">
+            © MCMXCIV-MMXXIV RAMRATAN PADHY. ALL RIGHTS RESERVED. PRINTED IN BITS.
+        </p>
+<div class="mt-4 flex gap-2">
+<span class="material-symbols-outlined text-[#c5b395] dark:text-stone-900 text-sm">verified</span>
+<span class="text-[#c5b395] dark:text-stone-900 text-[10px] uppercase font-bold tracking-[0.2em]">AUTHENTIC CHRONICLE</span>
+</div>
+</footer>
+</body></html>

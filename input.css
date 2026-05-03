@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .newspaper-grid {
+        @apply grid gap-6 grid-cols-1 lg:grid-cols-12;
+    }
+}
+
+.rule-double {
+    border-top: 4px solid black;
+    border-bottom: 1px solid black;
+    padding: 4px 0;
+    height: 8px;
+    box-sizing: content-box;
+}
+
+.grainy-overlay {
+    position: relative;
+}
+
+.grainy-overlay::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuBl21jeIaZ1VXHpxSpEOHp3PgJaHB9Wye88qlUDfd0S82nhgL2MzYr0Ztewru8phMdl6p-QAi7QvUTPnnC1xoC6TvxPFuc5iVDJKiLnxiZHWM8EgacBgmk3CCDcqKi2S6EZ4aAzc0cPXF1LiD-LVFVaAPWC2XDzci_5Y_2HDbVuwtjuX63_4duO2p4tW34J8zLexTr6Hp2Ix_kWTIh62Wblobluu0LnWT23pxjzwq88gjdAURN2AuzGGmyshi6y51xvXnz1_c8afw);
+    opacity: 0.15;
+    pointer-events: none;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+    animation: marquee 30s linear infinite;
+}
+
+html {
+    scroll-behavior: smooth;
+}

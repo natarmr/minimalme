@@ -1,0 +1,7 @@
+# Ramratan Padhy / Personal Portfolio
+
+> A brutalist-style portfolio website detailing Ramratan Padhy's work in AI, systems programming, and technical communication.
+
+## Pages
+- [Home](https://ramratan.in/): The main portfolio page featuring my background, professional experience, latest projects (RAG, BitNet, etc.), and technical skills.
+- [Article](https://ramratan.in/article.html): An in-depth technical analysis of "The Mathematics That Make 1.58-bit Weights Work" focusing on BitNet b1.58.
