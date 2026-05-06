@@ -1,80 +1,58 @@
 # ramratan.in
 
-**A brutalist, newspaper-style portfolio built for speed.** Single HTML file, zero JavaScript, zero external requests. Hosted on Cloudflare Pages.
+A fast-loading, edge-delivered, single-file portfolio optimized for both humans and AI crawlers. Zero JavaScript. Zero external requests. One HTTP response.
 
-🔗 **Live:** [ramratan.in](https://ramratan.in)
+🔗 **[ramratan.in](https://ramratan.in)**
 
 ---
 
-## Performance
+## Lighthouse
 
-| Metric | Value |
+Tested via [PageSpeed Insights](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Framratan.in%2F) — May 7, 2026.
+
+|  | Performance | Accessibility | Best Practices | SEO |
+|---|:---:|:---:|:---:|:---:|
+| **Mobile** | 🟢 100 | 🟠 88 | 🟢 100 | 🟢 92 |
+| **Desktop** | 🟢 100 | 🟠 88 | 🟢 100 | 🟢 92 |
+
+### Core Web Vitals
+
+| Metric | Mobile | Desktop |
+|---|:---:|:---:|
+| First Contentful Paint | 0.8s | 0.2s |
+| Largest Contentful Paint | 1.5s | 0.4s |
+| Total Blocking Time | 0 ms | 0 ms |
+| Cumulative Layout Shift | 0 | 0 |
+| Speed Index | 0.8s | 0.3s |
+
+## Numbers
+
+| | |
 |---|---|
-| **Transfer size (gzip)** | **6.2 KB** |
-| **Uncompressed HTML** | 19.1 KB |
-| **HTTP requests** | 1 (just the HTML) |
-| **JavaScript** | 0 bytes |
-| **External CSS** | 0 bytes |
-| **External fonts** | 0 |
-| **Images** | 0 |
-| **DOM elements** | ~150 |
-| **Total repo files** | 7 |
+| **Transfer size** | 6.2 KB (gzip) |
+| **HTML source** | 19.1 KB |
+| **HTTP requests** | 1 |
+| **JavaScript** | None |
+| **External dependencies** | None |
+| **Fonts loaded** | 0 (system stack) |
+| **Files in repo** | 7 |
 
-## Architecture
+## AI Discoverability (AEO)
 
-```
-index.html          ← entire site (inlined CSS, zero JS)
-robots.txt          ← AI crawler rules
-llms.txt            ← structured context for LLMs
-sitemap.xml         ← search engine sitemap
-ramratan_resume.pdf ← downloadable resume
-favicon.ico         ← browser icon
-.gitignore
-```
+Optimized for AI search engines and LLM crawlers.
 
-**Design philosophy:** everything ships in one HTTP response. No render-blocking resources, no layout shifts, no hydration. The browser parses HTML and paints — that's it.
-
-## AEO (Agentic Engine Optimization)
-
-Optimized for AI crawlers and LLM discoverability.
-
-| Check | Status |
+| Check | |
 |---|---|
-| `llms.txt` present | ✅ 3.4 KB, structured Markdown |
-| `robots.txt` with AI bot rules | ✅ GPTBot, ClaudeBot, PerplexityBot, Google-Extended + 7 more |
-| `sitemap.xml` with lastmod | ✅ Weekly changefreq, priority 1.0 |
-| Token count (homepage) | ✅ ~4,900 tokens (well under 25K context limit) |
-| Semantic HTML | ✅ Proper heading hierarchy, `<nav>`, `<main>`, `<section>`, `<footer>` |
-| Meta tags | ✅ Description, canonical, robots |
-
-### llms.txt Coverage
-
-The `llms.txt` file provides structured context including:
-- Bio, role, education, location
-- All projects with tech stacks
-- Work experience with descriptions
-- Skills taxonomy (languages, tools, concepts)
-- Published research
-- Contact information and links
-
-## Stack
-
-- **Markup:** Semantic HTML5
-- **Styling:** Vanilla CSS (inlined in `<style>`)
-- **Fonts:** System font stack (`Georgia`, `Times New Roman`, `serif`)
-- **Hosting:** Cloudflare Pages
-- **Domain:** Cloudflare DNS
-- **Build step:** None — static file, no compilation
+| `llms.txt` | ✅ Structured Markdown — bio, projects, skills, experience, links |
+| `robots.txt` | ✅ Explicitly allows GPTBot, ClaudeBot, PerplexityBot, Google-Extended, Applebot-Extended, Bytespider, CCBot, FacebookBot, Amazonbot |
+| `sitemap.xml` | ✅ lastmod, weekly changefreq, priority 1.0 |
+| Token count | ✅ ~4,900 tokens (fits any LLM context window) |
+| Semantic HTML | ✅ Proper `<nav>`, `<main>`, `<section>`, `<footer>` hierarchy |
+| Meta tags | ✅ Description, canonical URL, robots directive |
 
 ## Design
 
-Brutalist newspaper aesthetic inspired by [berzi.one](https://berzi.one) and [superminimalism](https://github.com/spirizeon/superminimalism):
-
-- Warm paper tone (`#c5b395`) with black ink
-- Newspaper masthead with volume/edition/date
-- Grid layout with sidebar
-- Project cards, experience timeline, skills grid
-- Fully mobile-responsive (single-column collapse)
+Brutalist newspaper aesthetic. Warm paper tone, black ink, serif type. Fully responsive — grid collapses to single column on mobile. Inspired by [berzi.one](https://berzi.one) and [superminimalism](https://github.com/spirizeon/superminimalism).
 
 ## License
 
