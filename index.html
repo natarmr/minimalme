@@ -12,7 +12,7 @@
 :root{--paper:#c5b395;--ink:#111;--ink-light:#444;--bg:var(--paper)}
 html{scroll-behavior:smooth;font-size:16px;background:var(--bg);color:var(--ink)}
 body{font-family:Georgia,'Times New Roman',serif;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;position:relative}
-body::after{content:'';position:fixed;inset:0;background-image:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/wAALCADIAMgBAREA/8QAGgAAAwEBAQEAAAAAAAAAAAAAAQIDAAYFBP/EABgQAQEBAQEAAAAAAAAAAAAAAAABAhES/9oACAEBAAA/APkpaDDDSGzFMxTMVzFcxbMVypmLZVyplSHgwRZmcHQoNwZDSHkUzFMxXMVzFcxXMVzFcxXKmTw0NBYYzOFsLYHBkNIaQ0iuYfMVzFcxXMVzFcxXMUzFJDw0MwszOHsLY3G4aQ8h5lTOVMxTMVzFcxXMVzFMxSQ8h4aQRjMzOKsC5DyMyaZPIeQ+cqZypnKucq5iuYrmKSHkPIaGgszMzj7kvlvLcNIaQ8ypnKmcqZyrnKmcq5ikikh5DyGgxmYGFyVgeW8t5NMmmVJk+cqZypmKZiucqZimYpIeQ0gswdbodbo9cvch5by0yaZNnKkyfOVM5UzlXOVM5UzlSQ0h5BYA6HQ63W63XPeQ8t5GZGZPMnmVM5PnKucqZyfOVJDyHkFgtL0toWhaHpvQ+njeQ8t5aZPMmmTzKmcnzlSZUzk8h5DyCFoXRbS2ktC6C6D03ofTzvLeW8jMmmTTJ5lSZNMqTJ5DyHkEOltLaS0t0S6L6C6D03oZpHyHlvIzJpk0yeZPMmmVJDSHkELS2ktJaTWiWluiXQXQem9DNH8t5byMyMyeQ0hpDyGkPIIWltJanrRLol0S6JdEugug9N6NNPr8t5bgzIzJpDSGkPIaQQtLaS1PVT1SXSd0S6JdEugug9NNGmnp+W8jxpDSDIaQ0hpBCltJanaTVT1pO6T1pO6JdEui3Tem9G9Pc43G43DcGQZDSCFpbSWk1U7U9aT1U9aS1pO6JdFui3Qem9GmnR8ZuDwZBkHghaW0lpNVPVT1U9VPWktaT1pPWiXRLoLoPTTRpp1PG43G4bgsHS2ltJqp6qeqlqp60lrSeqnqp60nrRbot03pvRpp17cbjcGMxbS2ktT1U9VLVT1pLVS1U9VPWk9aJqktLa3R6MrtGZmYLS0lqeqnqpaqeqlqp6qWqnqpapLU7S2h0Ot00rt2ZmAKW1PVT1UtVPVS1UtVLVT1U9VLVJqp2ltDrdboyu6ZmrBS0uk9VLVS1UtVLVS1U9VLVT1U7SaqdoWh0BGV3bMwBS0lT0npLSOqlqpaqeqnqpaT1SUlLQbrdN13YsDBS0mk9JaS0jtLSWk9JaT0nolLS0AY0d4wsAUlJpPSWktI7S0lpPSek9J6TpaWgzC//9k=);opacity:.12;pointer-events:none;z-index:9999}
+
 img{max-width:100%;height:auto;display:block}
 a{color:var(--ink)}
 .masthead{max-width:1280px;margin:0 auto;border-bottom:1px solid #000;background:var(--bg)}
@@ -25,7 +25,8 @@ a{color:var(--ink)}
 .masthead-nav a:first-child{font-weight:700;text-decoration:underline;text-underline-offset:4px}
 .masthead-nav .weather{font-size:11px;white-space:nowrap}
 .ticker{background:#000;overflow:hidden;white-space:nowrap;padding:6px 0;width:100%}
-.ticker-inner{display:flex;gap:32px;animation:marquee 30s linear infinite}
+.ticker-inner{display:flex;gap:32px}
+
 @keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 .ticker span{color:var(--paper);font-size:13px;font-style:italic;letter-spacing:1px;text-transform:uppercase}
 main{max-width:1280px;margin:0 auto;padding:24px 16px 0}
@@ -109,7 +110,7 @@ footer .badge{display:flex;align-items:center;justify-content:center;gap:6px;fon
       <a href="#chronicles">CHRONICLES</a>
       <a href="#experience">EXPERIENCE</a>
       <a href="#technical">TECHNICAL</a>
-      <a href="#article">ARTICLE</a>
+
       <a href="mailto:ramratanpadhy59@gmail.com">CONTACT</a>
       <a href="ramratan_resume.pdf" download>RESUME</a>
     </nav>
@@ -129,10 +130,7 @@ footer .badge{display:flex;align-items:center;justify-content:center;gap:6px;fon
   <h2 class="section-title">RISING AI SPECIALIST REVOLUTIONIZES TECH INDUSTRY</h2>
   <div style="display:flex;flex-direction:column;gap:16px;">
     <div style="display:flex;flex-direction:column;gap:16px;">
-      <div style="width:100%;max-width:400px">
-        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/wAALCABaAHgBAREA/8QAGwAAAgMBAQEAAAAAAAAAAAAAAwQCBQYBAAf/xAAzEAACAgECBAQFAwMFAQAAAAABAgADEQQhBRIxQRNRYXEGIjKRsVKBoRU1QhQzYnPR8P/aAAgBAQAAPwDUkSDCQKwbLAskXes52MQ1uoWnIbcgdBKPUaxNQuPEPfA/TFmsZHLVOwB2zC162whVdunTPSW2hvayvDZb/kYyTIkwb7zlduCEfcdpsiJEiQIg2EGywLpsZlOOV2Ua4K7BubHygxAFVIs8IYB+ntmGo8BqCpxznrsYpbWUA2wBtjuI7w3VCpTXknJGBLQPme5pwmCfebkiRIkT06SDCQYQF9RsqdAcFgQDFfiH4e091C31vyXJjmJyfE2x956/4fRdIiaQBeQY3xk+uTFOH/DbGwvqXDr5Df8AmZ/iOgNOrtQgMoYgMJH+n2UVrYVJBGcjtG9ExepsnJU4hi+JAvBvYFGSZ9AxIkSLCRIkSsELKjZyixC3lzDMruL8RP8AUq9NaQiuyEZPbP5jPFHusqFWmflLncgxbV6NxpK1VPC8PofFAyfbMoKntqtem35+Y9TvLRx0AGwGIsaURmZVALdcd4vcu2fKK2MV6yNaC1sk5A7T6OZHE4VnMSg4vxBrHaiklUU4Y/qP/kz2qZsbjOO4gX1I1NumZ2ZrKwQCTk7EkfmaanXVper3/Qwyrjpv5+UPxTW6RtOVZ1bI23lXw/TeMRdj5FPy+pjli4i7iL2CJ3pkRFmeklkJ9p9PnpycmS4mvh664jPLzkbSq1R2JHSVRYrbzjsf/vxLjR8Ur/071W186EnlB6iVmrtRAfDXDN0z2jGg47q9DTUhItr3wj9h6H7zQ8P4jRxKrKELaN2qzkj19oS1MRO1YrYJYcF0Nbq2ouQNvhAenvNaZ6C1Gor0yB7SQpOMgZxOJqaLRlLUP7zM8UsUay4jJBc9N5Ua6xjVihQpJ+Ykbyot6MGHK2x9DIUZLMo88icNTW6gJn5mIAnrSHuYp9A2X2HSWXw9dXRxRDbsGBUMTjlJmstWJ3JEbRiW2nDaeqpM4AxkTST0Q44M8MsP6SD/ADM9VZtsYDUVm9B8wweuRnMUsqeteVbBjy5BiI6unmryQFI7jpEFLVW5OxEPT8td2ob1rT3I3P7D8iBUDkXA6+UOKmK9cegE1HBNZZq9GV1DZtqPKT3I7GM3ABSfLeVessWu2nuOdWYemZe2VeIvMDtL2eER45/ab/YfmZOuzAM7pLBZp1Oc9oPUHDYiGpJIIzsRFn07vUGxuBkesBrbcslCMGSkcuR0Zv8AI/f+AJJNPY1C3BW8JW5Cy+eM4+0ZqAx3/cxii19PaLq25WX7EeRl03F9K2nFiEsx/wAR2Mo7nNlhY/xLLhvHDQop1eWr6B+495t8yQ6RDjpxwm79vzMX4gAbmPKMdfKS0TBQ6qSR6ztrMxJwMesUtZfFKcvMV677CC117JXy4+dh0HYSr5T1I2m1+HNNVd8M6mu1c+MzEehGMGULVGuxkccrKcEGCVheWyAVBwuenvCZAwqDAX7CdY7Zi9jAGfUAZLmlZ8Rvy8If1ZRMTdb4YJPlO6NmDMex2EauYVV8x6joPWL1qKqvEtPTLsfMxFy1zWu31Fc+3pBIcafzwc/tiW2g49bodKKK6q2rUnrnO+8W1WpGqYOByswwxB6waYFPKu2DJ5kC/wBoC05n1QTsqfij+1r/ANg/BmG13RfcRmrZ1A/SPzDaje1c+cX4qSNOgHQsIBejxdf9m32EgPpaSQ/T7xhf8v2nLPrnjF2+sz//2Q==" alt="Ramratan Padhy" style="border:1px solid #000;width:100%" width="120" height="90">
-        <p style="font-size:11px;font-style:italic;margin-top:4px">FIG 1.1: Ramratan Padhy, Computer Science Engineering Student at SRM University AP.</p>
-      </div>
+
       <div>
         <p class="drop-cap" style="font-size:17px">Ramratan Padhy is a Computer Science Engineering student at SRM University AP, with a strong focus on artificial intelligence, systems programming, and technical communication. He has maintained an exceptional academic record while actively engaging in advanced research and practical applications.</p>
         <p style="font-size:17px;margin-top:14px">His portfolio of work spans from developing complex Retrieval-Augmented Generation (RAG) pipelines to mathematical modeling of drone trajectories. He has consistently demonstrated the ability to synthesize complex engineering concepts into accessible solutions, working effectively in both research and startup environments.</p>
@@ -178,15 +176,12 @@ footer .badge{display:flex;align-items:center;justify-content:center;gap:6px;fon
       <ul><li>Conducting novel research and experimentation on Qwen 2.5 family by attempting to quantize it using BitNet's ternary engine.</li></ul>
     </div>
   </div>
-  <div class="cta-block">
-    <div class="cta-img">
-      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/wAALCABNAJYBAREA/8QAGgABAAIDAQAAAAAAAAAAAAAAAAQFAgMGAf/EADsQAAEDAgQBBwkHBQEAAAAAAAEAAgMEEQUSITFBBhMUIlFhcTJSU4GRkqHB0RUjM0JUk7FicqKy4fH/2gAIAQEAAD8A4w7lERERERERERERDuUREREREREREREO5RZxxPk8kaDcnQD1qSygLwMszMx4a2C8fhtQwXDWvA81yjPjew2e0t8RZeNaXODWi5JsAtvRZgbZNfEJ0WXzf8gvOjS+aPeCdGl80e8Fk2jnebMjLj2NIJSSjqImF8kL2tHEhaERERTW4e/ypHBo7BqVKhwwvNmsFuJOqtosEzxWlcGt4C23qWLsFMLHSQyZy0XsN1WtqXXLJBa+xK856VkpjfZ7SdARcfFboTTGphbJTRtOdtnDReYhDNFLeih5yAk2a0OcWG+2/wAVVOqi4BrooyG6AEHT4rHnx6CL2H6pz49BF7D9VnDWvgfnhYyN9rXaCD/KkurpqyjqWzEODWAju6wVaiIiLomRPc7bbsCuKKi0DnaeI1VnHTucLtF7cToB4KnruUdHQzPjiY6qlabEh1mA+PFUgjZWx54t97bkLOik5qtZHUNzZXWPgr84dRz1oiE7BOGh7WNb5Lb3v3/JeVGB1VP97T1Lc5LiW6j2FVWIULqnPFUxMjriAWPbpzh7DwN+HeuZILSQRYjcFF7kda+U27bKTTA9Fq9D+G3/AHatLIXvIFrX4lZMpyXG98vbZbzRNBLRnc7TRbxhUmUO5u/tWwURhAzWae5eOaG8b/2rrafD443HTirFsMULOcmdkjaLlzjYALk+UHKYTsfR4cSIjo+XYuHYO7+VyyzhmkgfmieWO7QVLGJyukD5g154uAyn4K/watLpYSwCa3VbfQsB3F/lsrSDE5RyhmoZbiGUF8DnHW9hceFwfCy0coZOjxUk8vWizmKQb200PiLFcxirqWStjqGyNlbK0GQMOodsT691tjfg8LczpKmV5P5Yw2w9q3CuwiV4BZVQhrbB2hv4rdSURnFZNSv6RE4gNsbEjMNLbgrTWinFR0eha5xvZ73HTwAWIopBLzIac4NrWXSxYdC2n0ZllsBmG6j9FkHkgZe8kn4KFVUj3uuS3wJI0UOTD5HDcepXGKcqqWkLoqJgqJNRn/IPquVxDF63EnXqZiW3uI26NHqUFERWuB4kaCVzWMDnyuYGk7DX/qkVj6+XE4pxQVAbTv6oyON+sTvZT8arpMTopYG4bWscZGvYTEbaCxv7Suc+za79HUftO+ifZtd+jqP2nfRbqfCKyVxDqadoAv8Ahm58FeUGHyNpKiKXnKWnDRmcRbXML68dNFLjdSYdNAxtK7mpAC2c8fV/4rJk9NLJla5rZRuCOse/wUTE8apsMGU/eTWuIx8zwVAzlZXB/Xjhezsy2PtUhvKWmkN5oJWk72IcB/ClMxnCrD72x/qjd8rrjzuURERAbG4W3pM/ppPfKdJn9NJ75TpM/ppPfKdJn9NJ75WyComM8YdPIBmGucrr5pBlh5+Qy00UXOSOeSQRw04n6qJQVrpYZsSqZrlrHEU7ToWjQC3ifiqOXHK2RgY17ImtFm80wNIHcd1XucXElxJJ3JXiIh3KIiIiIiLKN2R7XDgbqxqcYM0L4mQBmaNsV81yGg3UOOrkjgdE3KA4FpNtbHdaEREQ7lERERERERERERf/2Q==" alt="Research Visual" style="border:1px solid #000;width:100%;height:100%;object-fit:cover" width="150" height="77">
-    </div>
     <div class="cta-box" style="flex:1">
       <h3>READ MY WORK</h3>
       <p>Dive into my detailed technical explorations and published articles on modern AI architectures.</p>
-      <a href="#article">READ FULL ARTICLE</a>
+      <a href="https://t.co/J2Y8YYBYpV" target="_blank" rel="noopener noreferrer">READ FULL ARTICLE</a>
     </div>
+
   </div>
 </section>
 <div class="rule-double"></div>
@@ -221,10 +216,7 @@ footer .badge{display:flex;align-items:center;justify-content:center;gap:6px;fon
 <aside>
   <div class="sidebar">
     <h3>THE DEVELOPER'S CORNER</h3>
-    <div style="margin-bottom:16px">
-      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/wAALCAB4AHgBAREA/8QAGgAAAwEBAQEAAAAAAAAAAAAAAQIDBAAFBv/EAEAQAAEDAgIECAwFAwUAAAAAAAEAAgMEERIhBRMxQSIyUVJhcZLRFCMzNEJUcoGRlKHhBiRDRMEVYmNTZIKTsf/aAAgBAQAAPwD4tXkkZNJrDiEriLgAYSd5VRTxE5tJv0lXjo4MsUdyd2MrTHQUrreJv/zd3rSzRdITY05/7Xd6c6IozsgOf+R3elGi6IPI1R4J57j/ACujLXV8rS+7r3wWOQsPctpi2C2VtqzyRXcRZY5WZrzQ3xY6lJ4UiEiUOs8HkK1CtAPE+qo3SgH6X1VW6ZwjyP1VG6ewi3g4PvVB+IrZCny5MS4fiEEgGA2P9yvS1Qmk1x4DXE7T1L0RVw28qztBSkqYd0rO0Fjkmiv5RnaCwgeLHUovCi4KVkhGaOAA5uAtfciANuJuy+zb0JsLee3LK9jn0+5EMaTbWMAvhvY/FcGNda72NxX3HK3elcxtrl7RcXsAcjyL29GQtFOGvAIBO0LfKaWmjxSiNotvGZUIpBU8NkDWRDLhDN3V0KMroi6RgYBgFzYLM5wdDrG7LbCs7TrIw47VJ4UwEj22I61UuwSSXkLbOxNFr3KdgeWh0ZlNhweAN/GVGxPvYCfDxOIOJ3p2wyubZzaizhZ1mDYOKmEVQc3MnxHhu8WOONnuU8LZKZ4llOuxkiPBkb7TdepR5YhbMHZ7gqikhMzpngueTcYje3Up1dS6N8cUIBe42Fxs5fp/CyyC9TV+yoxj8hnvaVGHzdqR6RoSzCzckPDHm2KONx5S1AVH+Bn170wqbft2fF3ej4V/t2dp3eiKuw82jPvd3qzdKSNAw00ALdhwZr0dHPfIwyScdxuVrllEUbnvNg0LHStL3OqZQQ5/FHNCk4+Pq/YUoz+RHslSg83apvStCoGA7QnbC3kCq2BnIExpnbY9X1ObdcKeoH6ULuokLtXKNtID7LwlxBvGpJfgCvRiADAWggEbCLFZqkOqapsOyNnCeeXoWhxyyyWEi89UAcy3duU2C9GB/apwebtSPSsT4HuN2yW6LJZTURNxF3B5ckYp5njKVjfakaP4WhrpvWKf3zt7kwfMP3NP8w3uTayf1un+YZ3I6yf1un+YZ3IY5/W6f5hnchimv51T/MM7kC6b1mn+Yb3KTjKCXCeC52kTNz+izvqJQ7DrGnqcCP8AxUEc9uE7D8EHNIGZueVKxXYbKM51sjWbiV6FHQUzgMYd8V6sOi6BwzY/tfZaG6H0e70H9v7KrdC6NPoSdv7JhoXR3+m/t/Zd/RdG3tq5O39krtC6O3Mf2/soyaI0eBlG+/t/ZZJ9GUIGTH9r7Lxq6jhZcxgi3KVKGXFGAUJCpB2FpJ3KuK4BG9TafzDD1r1KeTCt0U+5amVOy6s2e3pJvCDyo+EX2pDUWzBClJUZZGyxTTX3rzKp+IO6lghNmBO43Ckc2kJonXjHRkuGUzPetkb7LQyVaWTXOaoJ04msiZt90jpyNhUXzX3/AFWeSRZJnXBWWPiBMSkC6M2Lm9N0T5VquHKjXqzZVQSfBNrOldrUpkU3PUXvUXuyKlH5MIEoBdslB5ckXcdqcFOHJw5MJDyptYuD0DJ0pC9IXJHHIpGcQIFALnC9rLnkBzSUdY3lCIkbzkwlZzkdcznI69nOC7Xs5wXGZnOCBmYfSCXWM5UrpG22rmcQIEoBEFcQHDNDVhdqmo6lqOpajqWrtS1AwtXalqGqahqwjsCBQBRujdddG6N0bo4l2JdiQugSlJQulK//2Q==" alt="Workspace" style="border:2px solid #000;width:100%" width="120" height="120">
-      <p style="text-align:center;font-size:11px;text-transform:uppercase;font-weight:700;margin-top:4px">LATEST FROM THE LAB</p>
-    </div>
+
     <div class="sidebar-section">
       <h4>EDUCATION</h4>
       <p style="font-size:14px;font-weight:700;text-transform:uppercase;line-height:1.3">B.Tech in Computer Science</p>
@@ -258,75 +250,6 @@ footer .badge{display:flex;align-items:center;justify-content:center;gap:6px;fon
   </div>
 </section>
 
-<section id="article" class="article-section">
-  <div class="article-header">
-    <h1>The Mathematics That Make 1.58-bit Weights Work</h1>
-    <h2>How BitNet b1.58 Survives Its Own Quantization</h2>
-    <div class="article-meta"><span>BY <strong>RAMRATAN</strong></span><span>|</span><span>MAR 19, 2026</span></div>
-  </div>
-  <div class="article-body">
-    <p class="drop-cap">Standard large language models are built on a foundation of high-fidelity math. They rely on float16 or bfloat16 weights, giving the network roughly 65,000 distinct values to represent each parameter. This method works because it has enormous numerical headroom. It can represent tiny calibrations, large corrections, and everything in between.</p>
-    <p>What BitNet b1.58 throws away all this expressiveness by compressing every decision a neural network can make into just three choices: push left, push right, or do nothing. It uses ternary weights, exactly three possible values: -1, 0, and +1. That equates to 1.58 bits of information per weight and roughly a 10x compression in size.</p>
-    <p>How does a model with only three possible weight values not collapse?</p>
-    <p>When I started scanning the actual weight tensors of the model, what I found wasn't a near-miss or a clever hack. It was four distinct mathematical mechanisms operating in concert, each solving a different piece of the survival problem. This is a forensic account of what those mechanisms are, what the data revealed about them, and what the model independently invented for itself that never appeared in the original paper.</p>
-
-    <h3>Mechanism 1: Absmean Quantization</h3>
-    <p>The first layer is how the model chooses to map its high-precision thoughts into ternary values. The first problem is if you just round every weight to the nearest integer, your choice of rounding boundary determines which weights survive and which get zeroed out. Small shifts in that boundary can wipe out important features or preserve noise. BitNet solves this with a formula (that actually got popularized after the release of BitNet in 2023).</p>
-    <p>The elegance of the Absmean scale is that it dynamically centers the distribution before rounding. This normalizes the distribution so that the rounding boundary sits at the natural center of what this particular layer's weights actually look like.</p>
-
-    <table>
-      <thead><tr><th>Layer</th><th>Mean |W|</th><th>Zero Ratio</th></tr></thead>
-      <tbody>
-        <tr><td>0</td><td>1.2189</td><td>50.83%</td></tr>
-        <tr><td>10</td><td>1.6026</td><td>50.87%</td></tr>
-        <tr><td>20</td><td>1.8414</td><td>48.54%</td></tr>
-        <tr><td>29</td><td>1.1274</td><td>42.36%</td></tr>
-      </tbody>
-    </table>
-
-    <p>The zero ratio (proportion of weights that become exactly 0 after quantization) sits between 42% and 51% across all layers. Roughly half of all weights vanish. This sounds alarming, but it's the mechanism working correctly. Since a zero weight contributes nothing to the matrix multiply (it gets skipped during the multiplication) this translates directly into speed.</p>
-    <p>The outlier data is equally revealing. In layers 10–20 — the middle of the network, where representational activity is highest, we see the most extreme weights. These outliers matter because the absmean scale is set by the bulk of the distribution. A small number of extreme weights get heavily clipped, while the majority is quantized with appropriate resolution. The model is implicitly deciding that the tail of its weight distribution is less important than faithful representation of the core.</p>
-
-    <h3>Mechanism 2: Weight Scale Tensors — Restoring What Quantization Takes Away</h3>
-    <p>Quantizing to {-1, 0, +1} preserves direction and sign, but it obliterates magnitude. A weight that was 0.003 and a weight that was 0.847 both become +1 after ternary quantization they look identical but they represented completely different scales of influence. Without compensation, the outputs of every ternary layer would be uniformly scaled wrong.</p>
-    <p>To fix this, every linear layer is paired with a companion weight_scale bfloat16 tensor. At inference time, the model executes a restoration:</p>
-    <pre>Output = (X * W_ternary) * weight_scale</pre>
-    <p>The integer matrix multiply runs fast (no floating-point required), and then a single scalar multiplication restores the correct magnitude for that layer. Our scan of the inference checkpoint found 328,775,890 bfloat16 parameters dedicated to scales, norms, and embeddings, alongside 521,011,200 uint8 parameters storing the packed ternary weights. The total model is 1.178 GB, compared to roughly 3 GB for an equivalent fp16 model.</p>
-    <p>Interestingly, the data showed that attention layers require significantly more magnitude restoration than the MLP layers (average scale 2.1869). Because these scales are trained end-to-end, the model isn't just learning what the ternary weights should be; it is simultaneously learning exactly how much to rescale the outputs to compensate for its own compression.</p>
-
-    <h3>Mechanism 3: Sub_norm as Adaptive Gain</h3>
-    <p>This is where the forensic analysis produced something unexpected. BitNet has mostly followed the standard LLaMA-architecture, but this is where it deviates. Standard LLaMA-architecture models have two types of normalization: the pre-attention RMSNorm and the pre-FFN RMSNorm. When we mapped the full shape inventory of BitNet b1.58's safetensors, we found two additional normalization tensors that don't appear in any standard LLaMA variant:</p>
-    <ul>
-      <li><code>ffn_sub_norm</code>: shape [6912] — applied after the FFN ternary multiply</li>
-      <li><code>attn_sub_norm</code>: shape [2560] — applied after the attention ternary multiply</li>
-    </ul>
-    <p>When we audited the bf16 master weights layer by layer, what we found was not static normalization behavior. We found a systematic, monotonically increasing gain structure. Both the attention and FFN streams cross a "high gain" criticality threshold simultaneously. Before layer 14, sub_norm weights cluster near 1.0 (effectively no rescaling). After layer 14, they begin escalating in lockstep, reaching means of 9.32 (FFN) and 6.14 (attention) by the final layer.</p>
-    <p>Mathematics dictates that quantization error compounds across layers. When layer N quantizes its weights, it introduces a small error the difference between the true float weight and its ternary approximation. The output error of Layer N becomes the input error of Layer N+1. By the end of the network, the accumulated mathematical noise requires roughly seven times more gain than at the beginning to extract the true signal.</p>
-    <p>Layer 29's attention sub_norm makes this concrete. Its average gain value is 6.14 while the variance across individual channels is 48.35. That's an enormous spread. Compare that to layer 0, where every channel gets almost the same gain (variance near zero). What this means is that by layer 29, different channels inside the model have accumulated different amounts of error along the way which the model corrects individually, applying a unique gain value per channel rather than one blanket fix for the whole layer.</p>
-
-    <h3>Mechanism 4: RoPE Theta as Positional Headroom</h3>
-    <p>To understand BitNet's positional math, we first need to understand RoPE (Rotary Position Embedding). RoPE encodes position by rotating query and key vectors at frequencies that span a geometric range before attention is calculated. This makes the dot product naturally encode the relative distance between tokens. These rotations happen at different speeds: fast, high-frequency bands capture local context (adjacent words), while slow, low-frequency bands track long-range structure. The <code>rope_theta</code> parameter controls this frequency spread. A larger theta stretches the slow bands into even longer wavelengths, dramatically increasing the model's positional resolution over long distances.</p>
-    <p>This is where the fourth mechanism operates, positional encoding. We see during analysis that BitNet b1.58 uses <code>rope_theta = 500000.0</code>. Standard LLaMA 2 uses <code>rope_theta = 10000</code>. That's a 50x increase in the base frequency parameter.</p>
-    <p>With theta=10000 and a head dimension of 128, the highest-frequency band has a wavelength of 6.3 tokens and the lowest-frequency band tops out around 25,600 tokens. With theta=500000, the lowest band's wavelength extends to 2,559,195 tokens which is far beyond any practical context length.</p>
-    <p>Our full saturation analysis at the model's trained length of 4K tokens found:</p>
-    <ul>
-      <li><strong>32 bands already wrapping (saturation >100%):</strong> these rotate so fast that they cycle multiple times across the context window. Band 0, the highest-frequency band, saturates at 65,189%, wrapping 651 times. This is intentional: local relationships are encoded through periodicity, not monotonic position.</li>
-      <li><strong>21 bands completely safe (<10% saturation):</strong> these barely rotate at all within 4K tokens. They are essentially untouched positional reserve.</li>
-    </ul>
-    <p>Extending to 8K tokens, 35 bands wrap. At 12K, 37 bands wrap. The critical observation is that only bands 32–42 (wavelengths 4K–15K) require interpolation when extending context beyond the trained length. Everything outside that narrow window either wraps by design or remains safe at any realistic length.</p>
-    <p>Dimension of information which layer does not compress, which is delivered through the rotary embeddings rather than through weights, arrives at every layer with maximum fidelity. High theta is positional headroom: it buys the model reserve encoding capacity in a dimension that quantization cannot touch.</p>
-
-    <h3>The Elegance of Self-Correction</h3>
-    <p>BitNet b1.58 does not succeed because we forced a square peg into a round hole. It succeeds because these four mechanisms form an unbroken cascade of mathematical compensation.</p>
-    <ol>
-      <li><strong>Absmean quantization</strong> adapts the rounding boundary to each layer's actual weight distribution, minimizing worst-case error given the data.</li>
-      <li><strong>Weight scale tensors</strong> restore global magnitude after the ternary multiply, ensuring that the overall scale of activations stays correct.</li>
-      <li><strong>Sub_norm layers</strong> restore per-channel magnitude with a learned, depth-aware gain schedule compensating for thirty layers of compounding quantization error using correction values the model derived entirely from training signal.</li>
-      <li><strong>High RoPE theta</strong> ensures that positional relationships, the one dimension of information that bypasses weight compression entirely, arrive with maximum resolution.</li>
-    </ol>
-    <p>That is the real answer to why BitNet b1.58 doesn't collapse. It's not that 1.58 bits is somehow enough. It's that the architecture learned to continuously correct for the fact that it isn't and by layer 29, the correction schedule it learned looks remarkably like what a human quantization engineer would have designed on purpose.</p>
-  </div>
-</section>
 </main>
 
 <footer>
@@ -338,6 +261,7 @@ footer .badge{display:flex;align-items:center;justify-content:center;gap:6px;fon
     <a href="mailto:ramratanpadhy59@gmail.com">Email</a>
     <a href="ramratan_resume.pdf" download>Resume</a>
   </div>
+
   <p class="copy">&copy; MCMXCIV-MMXXIV RAMRATAN PADHY. ALL RIGHTS RESERVED. PRINTED IN BITS.</p>
   <div class="badge">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width:14px;height:14px"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm4.24 8.71l-5.66 5.66a.996.996 0 01-1.41 0l-2.83-2.83a.996.996 0 111.41-1.41l2.12 2.12 4.95-4.95a.996.996 0 111.41 1.41z"/></svg>
