@@ -39,7 +39,7 @@ Tested via [PageSpeed Insights](https://pagespeed.web.dev/analysis?url=https%3A%
 
 ## AI Discoverability (AEO)
 
-Optimized for AI search engines and LLM crawlers.
+Optimized for AI search engines and LLM crawlers. Thanks, [github.com/Spirizeon/agentic-aeo-skills](https://github.com/Spirizeon/agentic-aeo-skills)
 
 | Check | |
 |---|---|
