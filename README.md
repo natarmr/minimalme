@@ -12,8 +12,8 @@ Tested via [PageSpeed Insights](https://pagespeed.web.dev/analysis?url=https%3A%
 
 |  | Performance | Accessibility | Best Practices | SEO |
 |---|:---:|:---:|:---:|:---:|
-| **Mobile** | 🟢 100 | 🟠 88 | 🟢 100 | 🟢 92 |
-| **Desktop** | 🟢 100 | 🟠 88 | 🟢 100 | 🟢 92 |
+| **Mobile** | 100 | 88 | 100 | 92 |
+| **Desktop** | 100 | 88 | 100 | 92 |
 
 ### Core Web Vitals
 
