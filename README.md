@@ -52,8 +52,5 @@ Optimized for AI search engines and LLM crawlers.
 
 ## Design
 
-Brutalist newspaper aesthetic. Warm paper tone, black ink, serif type. Fully responsive — grid collapses to single column on mobile. Inspired by [berzi.one](https://berzi.one) and [superminimalism](https://github.com/spirizeon/superminimalism).
+Brutalist newspaper aesthetic. Warm paper tone, black ink, serif type. Fully responsive — grid collapses to single column on mobile. Inspired by [berzi.one](https://berzi.one) and [sanatkulkarni.tech](https://sanatkulkarni.tech).
 
-## License
-
-© Ramratan Padhy. All rights reserved.
