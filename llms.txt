@@ -1,7 +1,84 @@
-# Ramratan Padhy / Personal Portfolio
+# Ramratan Padhy — AI Specialist & CSE Student
 
-> A brutalist-style portfolio website detailing Ramratan Padhy's work in AI, systems programming, and technical communication.
+## About
+- Name: Ramratan Padhy
+- Role: Computer Science Engineering Student at SRM University AP
+- Location: Amaravati, Andhra Pradesh, India
+- Focus: AI, Systems Programming, Technical Communication
+- Status: Open to Full-Stack Opportunities
 
-## Pages
-- [Home](https://ramratan.in/): The main portfolio page featuring my background, professional experience, latest projects (RAG, BitNet, etc.), and technical skills.
-- [Article](https://ramratan.in/article.html): An in-depth technical analysis of "The Mathematics That Make 1.58-bit Weights Work" focusing on BitNet b1.58.
+## Links
+- Website: https://ramratan.in/
+- LinkedIn: https://www.linkedin.com/in/ramratan-ntlap/
+- GitHub: https://github.com/consolelogram
+- X (Twitter): https://x.com/IamRamratan
+- Email: ramratanpadhy59@gmail.com
+
+## Projects
+
+### AI Advertisement Tool
+- Tech: Python, RAG, ETL
+- End-to-end content engine using RAG framework synthesizing data from LinkedIn, GitHub, and web portfolios. ETL pipeline for unstructured web data to LLM-based script generation with automated video/audio synthesis.
+
+### Temporal RAG Pipeline
+- Tech: Python, RAG, ETL
+- End-to-end pipeline for video input with temporal query support. Uses advanced data structures and audio-video technologies for timeline-based answers beyond semantic similarity.
+
+### Anti-UAS Implementation
+- Tech: Python, Physics Modeling
+- Simulated anti-drone defense logic with mathematical modeling of projectile trajectories and signal interference using Newtonian physics.
+
+### Game Development Framework
+- Tech: Python, Godot, Networking
+- Playable AI debate game (Ace Attorney-style) with LLM opponent and judge LLM. Built on Godot, Python, and Groq with RAG layer for character personality.
+
+### BitNet-1.58b Research
+- Tech: Python, Machine Learning, Mathematics
+- Novel research on BitNet-1.58b, experimenting with altered context lengths and ternary weight architectures.
+
+### SWA-based LLMs Research
+- Tech: Python, Machine Learning, Mathematics
+- Research on Qwen 2.5 family quantization using BitNet's ternary engine.
+
+## Experience
+
+### Associate — Next Tech Lab AP (Oct 2025 – Present)
+- Location: Amaravati, Andhra Pradesh
+- Research collective exploring low-level implementations of emerging technologies
+- Peer-to-peer technical workshops on systems programming and AI architecture
+
+### Technical Content Writer — Notecove, Stealth Startup (May–Aug 2025)
+- Location: Remote
+- Authored 30+ technical articles on emerging software trends and AI ethics
+- Synthesized complex engineering concepts into accessible documentation
+- Defined technical voice and content strategy with founding team
+
+### ML Intern — Hush, Startup (Mar 2025 – Present)
+- Location: Remote
+- Worked with image models for user profile verification
+- Collaborated on user experience definition and enhancement
+
+## Education
+- B.Tech in Computer Science, SRM University AP, Andhra Pradesh (2025 – Present)
+
+## Skills
+
+### Languages
+Python, C, C++ (Basic), LaTeX
+
+### Developer Tools
+Git, VS Code, Postman, APIs, Vector Databases
+
+### Core Concepts
+Data Structures, Transformer Architectures, RAG, Technical Documentation, Mechanistic Interpretability
+
+### Soft Skills
+Technical Communication, Research Synthesis, Problem Solving, Teamwork
+
+## Published Work
+- "The Mathematics That Make 1.58-bit Weights Work" — In-depth forensic analysis of BitNet b1.58's quantization survival mechanisms, covering Absmean Quantization, Weight Scale Tensors, Sub_norm Adaptive Gain, and RoPE Theta positional headroom.
+
+## Contact
+- LinkedIn: https://www.linkedin.com/in/ramratan-ntlap/
+- Email: ramratanpadhy59@gmail.com
+- Resume: https://ramratan.in/ramratan_resume.pdf
