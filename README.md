@@ -1,6 +1,6 @@
 # ramratan.in
 
-A fast-loading, edge-delivered, single-file portfolio optimized for both humans and AI crawlers. Zero JavaScript. Zero external requests. One HTTP response.
+A fast-loading, edge-delivered, super-optimized portfolio for both humans and AI crawlers. 
 
 🔗 **[ramratan.in](https://ramratan.in)**
 
@@ -12,8 +12,8 @@ Tested via [PageSpeed Insights](https://pagespeed.web.dev/analysis?url=https%3A%
 
 |  | Performance | Accessibility | Best Practices | SEO |
 |---|:---:|:---:|:---:|:---:|
-| **Mobile** | 🟢 100 | 🟠 88 | 🟢 100 | 🟢 92 |
-| **Desktop** | 🟢 100 | 🟠 88 | 🟢 100 | 🟢 92 |
+| **Mobile** | 100 | 88 | 100 | 92 |
+| **Desktop** | 100 | 88 | 100 | 92 |
 
 ### Core Web Vitals
 
@@ -39,7 +39,7 @@ Tested via [PageSpeed Insights](https://pagespeed.web.dev/analysis?url=https%3A%
 
 ## AI Discoverability (AEO)
 
-Optimized for AI search engines and LLM crawlers.
+Optimized for AI search engines and LLM crawlers. Thanks, [github.com/Spirizeon/agentic-aeo-skills](https://github.com/Spirizeon/agentic-aeo-skills)
 
 | Check | |
 |---|---|
@@ -52,8 +52,5 @@ Optimized for AI search engines and LLM crawlers.
 
 ## Design
 
-Brutalist newspaper aesthetic. Warm paper tone, black ink, serif type. Fully responsive — grid collapses to single column on mobile. Inspired by [berzi.one](https://berzi.one) and [superminimalism](https://github.com/spirizeon/superminimalism).
+Brutalist newspaper aesthetic. Warm paper tone, black ink, serif type. Fully responsive — grid collapses to single column on mobile. Inspired by [berzi.one](https://berzi.one) and [sanatkulkarni.tech](https://sanatkulkarni.tech).
 
-## License
-
-© Ramratan Padhy. All rights reserved.
