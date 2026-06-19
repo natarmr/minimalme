@@ -34,8 +34,7 @@ Tested via [PageSpeed Insights](https://pagespeed.web.dev/analysis?url=https%3A%
 | **HTTP requests** | 1 |
 | **JavaScript** | None |
 | **External dependencies** | None |
-| **Fonts loaded** | 0 (system stack) |
-| **Files in repo** | 7 |
+| **Fonts loaded** | 0 (system stack) 
 
 ## AI Discoverability (AEO)
 
