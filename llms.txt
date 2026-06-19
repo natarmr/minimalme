@@ -10,73 +10,70 @@
 ## Links
 - Website: https://ramratan.in/
 - LinkedIn: https://www.linkedin.com/in/ramratan-ntlap/
-- GitHub: https://github.com/consolelogram
+- GitHub: https://github.com/natarmr
 - X (Twitter): https://x.com/IamRamratan
 - Email: ramratanpadhy59@gmail.com
 
 ## Projects
 
-### AI Advertisement Tool
+### High-Performance Editorial Portfolio
+- Tech: HTML, CSS, Web Optimization
+- Architected a zero-dependency, single-file portfolio site optimized for instant edge delivery, achieving sub-300ms load times and a perfect 100/100 Lighthouse performance score.
+- Engineered a completely static, JavaScript-free architecture that inherently eliminates third-party vulnerabilities, maximizing security while ensuring optimal crawlability for modern AEO and SEO bots.
+
+### AI Advertisement Tool (RAG Pipeline)
 - Tech: Python, RAG, ETL
-- End-to-end content engine using RAG framework synthesizing data from LinkedIn, GitHub, and web portfolios. ETL pipeline for unstructured web data to LLM-based script generation with automated video/audio synthesis.
+- Developed an end-to-end content engine using a Retrieval-Augmented Generation (RAG) framework to synthesize data from LinkedIn, GitHub, and web portfolios.
+- Architected an ETL pipeline to clean unstructured web data for LLM-based script generation and automated video/audio synthesis.
 
 ### Temporal RAG Pipeline
 - Tech: Python, RAG, ETL
-- End-to-end pipeline for video input with temporal query support. Uses advanced data structures and audio-video technologies for timeline-based answers beyond semantic similarity.
+- Developed an end-to-end pipeline where you can input a video, and make any query regarding it.
+- Worked with advanced data structures and various audio-video technologies to produce a system capable of answering queries about a video based on timeline and not only semantical similarity.
 
-### Anti-UAS Implementation
-- Tech: Python, Physics Modeling
-- Simulated anti-drone defense logic with mathematical modeling of projectile trajectories and signal interference using Newtonian physics.
+### AXtheR (Windows)
+- Tech: C, Windows API, Wintun, Cryptography
+- Developed a high-performance, zero-dependency, easy to run UDP VPN for Windows by integrating the Wintun kernel driver and Winsock2.
+- Engineered a zero-heap allocation data path with multi-threaded asynchronous I/O and dynamic Windows routing table manipulation.
+- Implemented a self-contained, RFC-compliant ChaCha20-Poly1305 cryptographic engine from scratch in C with constant-time MAC verification.
 
-### Game Development Framework
+### BattleAttorney
 - Tech: Python, Godot, Networking
-- Playable AI debate game (Ace Attorney-style) with LLM opponent and judge LLM. Built on Godot, Python, and Groq with RAG layer for character personality.
+- Shipped a playable AI debate game (Ace Attorney-style) where an LLM opponent argues back and a separate judge LLM scores logical soundness. Built on Godot, Python, and Groq with a RAG layer for character personality.
 
-### BitNet-1.58b Research
+### Independent Research on BitNet-1.58b
 - Tech: Python, Machine Learning, Mathematics
-- Novel research on BitNet-1.58b, experimenting with altered context lengths and ternary weight architectures.
+- Conducting novel research and experimentation on BitNet-1.58b by altering its context length.
 
-### SWA-based LLMs Research
+### Independent Research on SWA-based LLMs
 - Tech: Python, Machine Learning, Mathematics
-- Research on Qwen 2.5 family quantization using BitNet's ternary engine.
+- Conducting novel research and experimentation on Qwen 2.5 family by attempting to quanitize it using BitNet's ternary engine.
 
 ## Experience
 
 ### Associate — Next Tech Lab AP (Oct 2025 – Present)
 - Location: Amaravati, Andhra Pradesh
-- Research collective exploring low-level implementations of emerging technologies
-- Peer-to-peer technical workshops on systems programming and AI architecture
+- Research associate at a QS ReImagine awarded student society.
+- Collaborating with a research collective to explore low-level implementations of emerging technologies.
+- Contributing to peer-to-peer technical workshops on systems programming and AI architecture.
 
-### Technical Content Writer — Notecove, Stealth Startup (May–Aug 2025)
+### Technical Content Writer — Notecove, Stealth Startup (May 2025 – Aug 2025)
 - Location: Remote
-- Authored 30+ technical articles on emerging software trends and AI ethics
-- Synthesized complex engineering concepts into accessible documentation
-- Defined technical voice and content strategy with founding team
+- Authored 30+ comprehensive technical articles and guides on emerging software trends and AI ethics.
+- Synthesized complex engineering concepts into accessible documentation for a specialized audience.
+- Collaborated with the founding team to define the technical voice and content strategy for the platform.
 
-### ML Intern — Hush, Startup (Mar 2025 – Present)
+### ML Intern — Hush, Startup (March 2026 – Present)
 - Location: Remote
-- Worked with image models for user profile verification
-- Collaborated on user experience definition and enhancement
+- Worked with image models to discern user profiles to keep the app authenticity.
+- Collaborated with the founding team to define and enhance user experience.
 
 ## Education
-- B.Tech in Computer Science, SRM University AP, Andhra Pradesh (2025 – Present)
-
-## Skills
-
-### Languages
-Python, C, C++ (Basic), LaTeX
-
-### Developer Tools
-Git, VS Code, Postman, APIs, Vector Databases
-
-### Core Concepts
-Data Structures, Transformer Architectures, RAG, Technical Documentation, Mechanistic Interpretability
-
-### Soft Skills
-Technical Communication, Research Synthesis, Problem Solving, Teamwork
+- Bachelor of Technology in Computer Science Engineering, SRM University AP, Andhra Pradesh (2025 – Present)
+- Year 1 SGPA: 9.0/10.0
 
 ## Published Work
-- "The Mathematics That Make 1.58-bit Weights Work" — In-depth forensic analysis of BitNet b1.58's quantization survival mechanisms, covering Absmean Quantization, Weight Scale Tensors, Sub_norm Adaptive Gain, and RoPE Theta positional headroom.
+- "The Mathematics That Make 1.58-bit Weights Work" — In-depth forensic analysis of BitNet b1.58's quantization survival mechanisms.
 
 ## Contact
 - LinkedIn: https://www.linkedin.com/in/ramratan-ntlap/
