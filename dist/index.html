@@ -1,891 +1,586 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description"
-    content="Ramratan Padhy — Computer Science Engineering student specializing in AI, systems programming, and technical communication. Portfolio and research.">
-  <meta name="robots" content="index,follow">
-  <link rel="canonical" href="https://ramratanpadhy.in/">
-
-  <!-- Open Graph / Twitter Card Meta Tags -->
-  <meta property="og:title" content="RAMRATAN PADHY | The Editorial Portfolio">
-  <meta property="og:description"
-    content="Ramratan Padhy — Computer Science Engineering student specializing in AI, systems programming, and technical communication.">
-  <meta property="og:url" content="https://ramratanpadhy.in/">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:creator" content="@IamRamratan">
-  <meta name="twitter:title" content="RAMRATAN PADHY | The Editorial Portfolio">
-  <meta name="twitter:description"
-    content="Ramratan Padhy — Computer Science Engineering student specializing in AI, systems programming, and technical communication.">
-
-  <!-- Structured Entity Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org/",
-    "@type": "Person",
-    "name": "Ramratan Padhy",
-    "jobTitle": "Computer Science Engineering Student",
-    "alumniOf": "SRM University AP",
-    "url": "https://ramratanpadhy.in/",
-    "sameAs": [
-      "https://github.com/natarmr",
-      "https://www.linkedin.com/in/ramratan-ntlap/",
-      "https://x.com/IamRamratan",
-      "https://medium.com/@ramratanpadhy59"
-    ]
-  }
-  </script>
-  <link rel="icon"
-    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
-  <link rel="dns-prefetch" href="https://www.linkedin.com">
-  <link rel="dns-prefetch" href="https://github.com">
-  <link rel="dns-prefetch" href="https://x.com">
-  <link rel="dns-prefetch" href="https://medium.com">
-  <title>RAMRATAN PADHY | The Editorial Portfolio</title>
-  <style>
-    *,
-    *::before,
-    *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0
-    }
-
-    :root {
-      --paper: #c5b395;
-      --ink: #111;
-      --bg: var(--paper)
-    }
-
-    html {
-      scroll-behavior: smooth;
-      font-size: 16px;
-      background: var(--bg);
-      color: var(--ink)
-    }
-
-    body {
-      font-family: Georgia, 'Times New Roman', serif;
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-      overflow-x: hidden
-    }
-
-    a {
-      color: var(--ink)
-    }
-
-    .masthead {
-      max-width: 1280px;
-      margin: 0 auto;
-      border-bottom: 1px solid #000;
-      background: var(--bg)
-    }
-
-    .masthead-top {
-      display: flex;
-      justify-content: space-between;
-      padding: 4px 16px;
-      font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: -.5px;
-      border-bottom: 1px solid #000
-    }
-
-    .masthead-top span:nth-child(2) {
-      font-weight: 700
-    }
-
-    .title-wrapper {
-      position: relative;
-      border-bottom: 4px solid #000;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 12px 0
-    }
-
-    .masthead h1 {
-      font-size: clamp(2rem, 8vw, 4.5rem);
-      font-weight: 900;
-      text-align: center;
-      text-transform: uppercase;
-      letter-spacing: -1px;
-      line-height: 1;
-      font-family: Georgia, serif
-    }
-
-    .social-links-top {
-      position: absolute;
-      right: 16px;
-      display: flex;
-      gap: 8px
-    }
-
-    .social-links-top a {
-      font-size: 11px;
-      font-weight: 700;
-      text-transform: uppercase;
-      text-decoration: none;
-      border: 1px solid #000;
-      padding: 4px 8px;
-      transition: background .15s, color .15s
-    }
-
-    .social-links-top a:hover,
-    .social-links-top a:focus-visible {
-      background: #000;
-      color: var(--paper)
-    }
-
-    @media(max-width:767px) {
-      .title-wrapper {
-        flex-direction: column;
-        gap: 8px;
-        padding-bottom: 12px
-      }
-
-      .social-links-top {
-        position: static
-      }
-    }
-
-    .masthead-nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 4px 16px;
-      border-bottom: 1px solid #000;
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: -.3px;
-      flex-wrap: wrap;
-      gap: 4px
-    }
-
-    .masthead-nav nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px 14px
-    }
-
-    .masthead-nav a {
-      text-decoration: none;
-      font-weight: 500;
-      padding: 2px 4px;
-      transition: background .15s, color .15s
-    }
-
-    .masthead-nav a:hover,
-    .masthead-nav a:focus-visible {
-      background: #000;
-      color: var(--paper)
-    }
-
-    .masthead-nav a:first-child {
-      font-weight: 700;
-      text-decoration: underline;
-      text-underline-offset: 4px
-    }
-
-    .masthead-nav .weather {
-      font-size: 11px;
-      white-space: nowrap
-    }
-
-    .ticker {
-      background: #000;
-      padding: 8px 16px;
-      width: 100%;
-      text-align: center
-    }
-
-    .ticker-inner {
-      display: flex;
-      justify-content: center
-    }
-
-    .ticker span {
-      color: var(--paper);
-      font-size: 13px;
-      font-style: italic;
-      letter-spacing: 1px;
-      text-transform: uppercase
-    }
-
-    main {
-      max-width: 1280px;
-      margin: 0 auto;
-      padding: 24px 16px 0
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 24px
-    }
-
-    @media(min-width:768px) {
-      .grid {
-        grid-template-columns: 2fr 1fr
-      }
-    }
-
-    .section-title {
-      font-size: clamp(1.3rem, 4vw, 2.4rem);
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: -.5px;
-      margin-bottom: 20px;
-      line-height: 1.2
-    }
-
-    .drop-cap::first-letter {
-      font-size: 3.5em;
-      font-weight: 900;
-      float: left;
-      margin-right: .15em;
-      margin-top: .1em;
-      line-height: .7
-    }
-
-    .projects-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 16px
-    }
-
-    @media(min-width:600px) {
-      .projects-grid {
-        grid-template-columns: 1fr 1fr
-      }
-    }
-
-    .project-card {
-      border: 1px solid #000;
-      padding: 16px;
-      background: rgba(255, 255, 255, .1)
-    }
-
-    .project-card h4 {
-      font-size: 1.1rem;
-      font-weight: 800;
-      text-transform: uppercase;
-      text-decoration: underline;
-      text-underline-offset: 4px;
-      margin-bottom: 4px
-    }
-
-    .project-card .tech {
-      font-size: 13px;
-      font-style: italic;
-      margin-bottom: 10px
-    }
-
-    .project-card ul {
-      list-style: disc;
-      padding-left: 18px;
-      font-size: 15px;
-      line-height: 1.55
-    }
-
-    .project-card li {
-      margin-bottom: 6px
-    }
-
-    .exp-item {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      margin-bottom: 24px
-    }
-
-    @media(min-width:600px) {
-      .exp-item {
-        flex-direction: row;
-        gap: 16px
-      }
-    }
-
-    .exp-date {
-      font-weight: 700;
-      font-size: 1rem;
-      white-space: nowrap;
-      min-width: 110px;
-      text-align: left
-    }
-
-    @media(min-width:600px) {
-      .exp-date {
-        text-align: right
-      }
-    }
-
-    .exp-date small {
-      display: block;
-      font-size: 10px;
-      text-transform: uppercase;
-      font-weight: 400
-    }
-
-    .exp-content {
-      border-left: 2px solid #000;
-      padding-left: 16px
-    }
-
-    @media(max-width:599px) {
-      .exp-content {
-        border-left: none;
-        padding-left: 0
-      }
-    }
-
-    .exp-content h4 {
-      font-size: 1.05rem;
-      font-weight: 800;
-      text-transform: uppercase;
-      line-height: 1.3
-    }
-
-    .exp-content .loc {
-      font-size: 12px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      display: block;
-      margin: 4px 0 8px
-    }
-
-    .exp-content ul {
-      list-style: disc;
-      padding-left: 18px;
-      font-size: 15px
-    }
-
-    .exp-content li {
-      margin-bottom: 4px
-    }
-
-    .skills-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      border-top: 1px solid #000;
-      border-bottom: 1px solid #000
-    }
-
-    @media(min-width:768px) {
-      .skills-grid {
-        grid-template-columns: 1fr 1fr 1fr 1fr
-      }
-    }
-
-    .skills-col {
-      padding: 16px;
-      border-bottom: 1px solid #000;
-      border-right: 1px solid #000
-    }
-
-    .skills-col:nth-child(2n) {
-      border-right: none
-    }
-
-    @media(min-width:768px) {
-      .skills-col:nth-child(2n) {
-        border-right: 1px solid #000
-      }
-
-      .skills-col:nth-child(4n) {
-        border-right: none
-      }
-    }
-
-    @media(max-width:767px) {
-      .skills-col:nth-child(odd) {
-        border-right: 1px solid #000
-      }
-
-      .skills-col:nth-child(even) {
-        border-right: none
-      }
-    }
-
-    @media(min-width:768px) {
-      .skills-col {
-        border-bottom: none
-      }
-    }
-
-    .skills-col h5 {
-      font-size: 11px;
-      font-weight: 700;
-      text-transform: uppercase;
-      border-bottom: 1px solid #000;
-      padding-bottom: 4px;
-      margin-bottom: 10px
-    }
-
-    .skills-col p {
-      font-size: 14px;
-      font-style: italic;
-      margin-bottom: 3px
-    }
-
-    .sidebar {
-      border: 2px solid #000;
-      padding: 16px;
-      background: rgba(0, 0, 0, .04)
-    }
-
-    .sidebar h3 {
-      font-size: 1.1rem;
-      text-align: center;
-      border-bottom: 1px solid #000;
-      padding-bottom: 8px;
-      margin-bottom: 16px;
-      text-transform: uppercase;
-      font-weight: 800
-    }
-
-    .sidebar-section {
-      border-top: 1px solid #000;
-      padding-top: 14px;
-      margin-top: 14px
-    }
-
-    .sidebar-section h4 {
-      display: inline-block;
-      font-size: 11px;
-      font-weight: 700;
-      text-transform: uppercase;
-      background: #000;
-      color: var(--paper);
-      padding: 2px 8px;
-      margin-bottom: 10px
-    }
-
-    .availability {
-      border: 1px solid #000;
-      padding: 10px;
-      background: rgba(255, 255, 255, .2)
-    }
-
-    .availability .row {
-      display: flex;
-      justify-content: space-between;
-      font-size: 12px;
-      margin-bottom: 4px
-    }
-
-    .availability .row span:first-child {
-      font-weight: 700;
-      text-transform: uppercase
-    }
-
-    .availability .row span:last-child {
-      color: #1a6b1a;
-      font-weight: 900
-    }
-
-    .availability .row:last-child span:last-child {
-      color: #000;
-      font-style: italic;
-      font-weight: 400
-    }
-
-    .classified {
-      font-size: 10px;
-      text-transform: uppercase;
-      line-height: 1.4;
-      margin-bottom: 6px
-    }
-
-    .classified span {
-      font-weight: 700
-    }
-
-    .classified+.classified {
-      border-top: 1px solid #000;
-      padding-top: 6px
-    }
-
-    .cta-box {
-      border: 2px solid #000;
-      background: #000;
-      color: var(--paper);
-      padding: 24px;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 12px
-    }
-
-    .cta-box h3 {
-      font-size: 1.3rem;
-      text-transform: uppercase;
-      font-weight: 800
-    }
-
-    .cta-box p {
-      font-size: 15px
-    }
-
-    .cta-box a {
-      display: inline-block;
-      font-size: 13px;
-      font-weight: 700;
-      background: var(--paper);
-      color: #000;
-      border: 1px solid #000;
-      padding: 10px 28px;
-      text-decoration: none;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      transition: background .15s
-    }
-
-    .cta-box a:hover,
-    .cta-box a:focus-visible {
-      background: #fff
-    }
-
-    footer {
-      background: #000;
-      color: var(--paper);
-      text-align: center;
-      padding: 24px 16px;
-      margin-top: 32px;
-      border-top: 4px solid #000
-    }
-
-    footer .name {
-      font-size: 1.3rem;
-      font-weight: 900;
-      text-transform: uppercase;
-      letter-spacing: -1px;
-      margin-bottom: 12px
-    }
-
-    footer .links {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 12px 20px;
-      margin-bottom: 16px
-    }
-
-    footer .links a {
-      color: var(--paper);
-      font-size: 12px;
-      font-weight: 700;
-      opacity: .8;
-      text-decoration: underline
-    }
-
-    footer .links a:hover {
-      opacity: 1
-    }
-
-    footer .copy {
-      font-size: 11px;
-      letter-spacing: 1px;
-      opacity: .6;
-      margin-bottom: 12px
-    }
-
-    footer .badge {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 6px;
-      font-size: 10px;
-      text-transform: uppercase;
-      font-weight: 700;
-      letter-spacing: 2px
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ramratan Padhy — AI specialist, systems programmer, and technical communicator. Portfolio.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://ramratanpadhy.in/">
+<meta property="og:title" content="RAMRATAN PADHY | PORTFOLIO">
+<meta property="og:description" content="AI specialist, systems programmer, and technical communicator.">
+<meta property="og:url" content="https://ramratanpadhy.in/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:creator" content="@IamRamratan">
+<meta name="twitter:title" content="RAMRATAN PADHY | PORTFOLIO">
+<meta name="twitter:description" content="AI specialist, systems programmer, and technical communicator.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Person",
+  "name": "Ramratan Padhy",
+  "jobTitle": "Computer Science Engineering Student",
+  "alumniOf": "SRM University AP",
+  "url": "https://ramratanpadhy.in/",
+  "sameAs": [
+    "https://github.com/natarmr",
+    "https://www.linkedin.com/in/ramratan-ntlap/",
+    "https://x.com/IamRamratan",
+    "https://medium.com/@ramratanpadhy59"
+  ]
+}
+</script>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<title>RAMRATAN PADHY | PORTFOLIO</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0 }
+:root {
+  --bg: #000;
+  --bg-elevated: #131313;
+  --bg-card: rgba(24,24,27,0.3);
+  --bg-hover: #18181b;
+  --bg-badge: #27272a;
+  --text: #fafafa;
+  --text-secondary: #c4c7c8;
+  --text-muted: #a1a1aa;
+  --text-dim: #71717a;
+  --border: #27272a;
+  --font: Consolas, 'Courier New', 'Lucida Console', monospace;
+  --max-w: 1100px;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem
+}
+html { scroll-behavior: smooth; font-size: 16px }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased
+}
+a { color: inherit; text-decoration: none }
+.container { max-width: var(--max-w); margin: 0 auto; border-left: 1px solid var(--border); border-right: 1px solid var(--border); min-height: 100vh; background: var(--bg) }
+.border-b { border-bottom: 1px solid var(--border) }
+.border-r { border-right: 1px solid var(--border) }
+.border-t { border-top: 1px solid var(--border) }
+.mono-label { font-size: 13px; letter-spacing: .05em; line-height: 1; font-weight: 400 }
+.text-secondary { color: var(--text-secondary) }
+.text-muted { color: var(--text-muted) }
+.text-dim { color: var(--text-dim) }
+.text-primary { color: var(--text) }
+
+/* Nav */
+.nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+  background: var(--bg-elevated);
+  border-bottom: 1px solid var(--border);
+  height: 64px
+}
+.nav-inner {
+  max-width: var(--max-w); margin: 0 auto;
+  display: flex; justify-content: space-between; align-items: center;
+  height: 100%; padding: 0 var(--space-lg)
+}
+.nav-brand { font-size: 20px; font-weight: 700; line-height: 1.4 }
+.nav-links { display: flex; gap: 2rem; font-size: 13px; letter-spacing: .05em; color: var(--text-secondary) }
+.nav-links a.active { color: var(--text); border-bottom: 2px solid var(--text); padding-bottom: 4px }
+.nav-links a:hover { color: var(--text); transition: color .15s }
+.nav-resume {
+  font-size: 13px; letter-spacing: .05em;
+  padding: 8px 16px; background: var(--text); color: #000; font-weight: 700;
+  transition: all .15s
+}
+.nav-resume:hover { background: #e4e4e7 }
+
+/* Hero */
+.hero { position: relative; border-bottom: 1px solid var(--border) }
+.scanline {
+  width: 100%; height: 1px;
+  background: rgba(255,255,255,0.05);
+  position: absolute;
+  animation: scan 4s linear infinite
+}
+@keyframes scan {
+  0% { top: 0 }
+  100% { top: 100% }
+}
+.hero-inner { padding: var(--space-lg); display: flex; flex-direction: column; gap: 2rem }
+.hero-top {
+  display: flex; flex-direction: column; gap: 1.5rem
+}
+@media(min-width:768px) {
+  .hero-top { flex-direction: row; justify-content: space-between; align-items: flex-end }
+}
+.status-badge {
+  display: inline-block; width: fit-content;
+  font-size: 13px; letter-spacing: .05em;
+  background: var(--bg-badge); color: var(--text);
+  padding: 4px 8px; line-height: 1
+}
+.hero-name {
+  font-size: clamp(2rem, 8vw, 64px); font-weight: 700;
+  letter-spacing: -.02em; line-height: 1; margin-top: 8px
+}
+.hero-name span { color: rgba(255,255,255,0.5) }
+.hero-tagline { font-size: 14px; color: var(--text-secondary); max-width: 560px; line-height: 1.6 }
+.scoreboard {
+  display: flex; flex-wrap: wrap; gap: 1rem;
+  border: 1px solid var(--border); padding: 1rem;
+  background: var(--bg-card)
+}
+.score-item { display: flex; flex-direction: column }
+.score-label { font-size: 13px; letter-spacing: .05em; color: var(--text-secondary) }
+.score-value { font-size: 20px; line-height: 1.4; font-weight: 500; color: var(--text) }
+.score-divider { width: 1px; height: 40px; background: var(--border) }
+
+/* Hero cards */
+.hero-cards { display: grid; grid-template-columns: 1fr; gap: 2rem }
+@media(min-width:768px) { .hero-cards { grid-template-columns: 1fr 1fr } }
+.hero-card {
+  border: 1px solid var(--border); padding: 1.5rem;
+  display: flex; flex-direction: column; gap: 1rem;
+  transition: background .15s
+}
+.hero-card:hover { background: var(--bg-hover) }
+.hero-card-header {
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 13px; letter-spacing: .05em; color: var(--text-secondary)
+}
+.hero-card-text { font-size: 16px; line-height: 1.6; color: #e4e4e7 }
+.terminal-card { position: relative; overflow: hidden }
+.terminal-card-overlay {
+  position: absolute; inset: 0;
+  background: var(--bg-hover); opacity: .2;
+  transition: opacity .15s
+}
+.terminal-card:hover .terminal-card-overlay { opacity: .4 }
+.terminal-card-content { position: relative; z-index: 10; display: flex; flex-direction: column; height: 100%; justify-content: center }
+.terminal-line { font-size: 14px; color: var(--text); line-height: 1.6 }
+.cursor::after { content: '\2588'; animation: blink 1s step-end infinite }
+@keyframes blink { 50% { opacity: 0 } }
+
+/* About */
+.about-grid { display: grid; grid-template-columns: 1fr; border-bottom: 1px solid var(--border) }
+@media(min-width:768px) { .about-grid { grid-template-columns: 4fr 8fr } }
+.about-sidebar {
+  padding: var(--space-md); background: rgba(24,24,27,0.2);
+  border-bottom: 1px solid var(--border)
+}
+@media(min-width:768px) {
+  .about-sidebar { border-bottom: none; border-right: 1px solid var(--border) }
+}
+.about-sidebar h2 {
+  font-size: 13px; letter-spacing: .05em; color: var(--text);
+  margin-bottom: 1rem; display: flex; align-items: center; gap: 8px
+}
+.about-avatar { aspect-ratio: 1; border: 1px solid var(--border); margin-bottom: 1.5rem; overflow: hidden }
+.about-meta { display: flex; flex-direction: column; gap: 8px; font-size: 13px; letter-spacing: .05em; color: var(--text-secondary) }
+.about-meta-row { display: flex; justify-content: space-between; border-bottom: 1px solid var(--border); padding-bottom: 8px }
+.about-meta-row .val { color: var(--text) }
+.about-main { padding: var(--space-md); display: flex; flex-direction: column; gap: 1.5rem }
+.about-main h3 { font-size: clamp(1.2rem, 3vw, 32px); font-weight: 700; letter-spacing: -.02em; line-height: 1.2 }
+.about-main p { font-size: 16px; line-height: 1.6; color: #d4d4d8 }
+.about-quote {
+  margin-top: 1rem; padding: 1rem;
+  background: var(--bg-hover); border-left: 2px solid var(--text)
+}
+.about-quote p { font-size: 14px; color: var(--text); font-style: italic; line-height: 1.6 }
+
+/* Section header */
+.section-header {
+  padding: var(--space-md); border-bottom: 1px solid var(--border);
+  display: flex; justify-content: space-between; align-items: center
+}
+.section-header h2 { font-size: 20px; font-weight: 700; letter-spacing: .1em; line-height: 1.4 }
+.section-header span { font-size: 13px; letter-spacing: .05em; color: var(--text-secondary) }
+
+/* Projects */
+.projects-grid { display: grid; grid-template-columns: 1fr; border-bottom: 1px solid var(--border) }
+@media(min-width:768px) { .projects-grid { grid-template-columns: 1fr 1fr 1fr } }
+.project-card {
+  padding: 2rem;
+  display: flex; flex-direction: column; height: 100%;
+  transition: background .15s;
+  border-bottom: 1px solid var(--border)
+}
+@media(min-width:768px) { .project-card { border-bottom: none } }
+.project-card:hover { background: var(--bg-hover) }
+.project-card .num { font-size: 13px; letter-spacing: .05em; color: var(--text-secondary); margin-bottom: 1rem }
+.project-card h3 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 8px; line-height: 1.4 }
+.project-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 1.5rem }
+.project-tags span {
+  font-size: 10px; letter-spacing: .05em;
+  border: 1px solid var(--border); padding: 2px 8px; line-height: 1
+}
+.project-card p { font-size: 14px; color: var(--text-muted); line-height: 1.5; margin-bottom: 2rem; flex-grow: 1 }
+.project-link {
+  margin-top: auto; display: flex; align-items: center; gap: 8px;
+  font-size: 13px; letter-spacing: .05em; color: var(--text)
+}
+.project-link:hover { text-decoration: underline }
+@media(min-width:768px) {
+  .project-card:nth-child(3n) { border-right: none }
+}
+
+/* Experience */
+.exp-section { border-bottom: 1px solid var(--border) }
+.exp-header {
+  padding: var(--space-md); border-bottom: 1px solid var(--border);
+  display: flex; align-items: center; gap: 1rem
+}
+.exp-header h2 { font-size: 20px; font-weight: 700; letter-spacing: .1em; line-height: 1.4; white-space: nowrap }
+.exp-header hr { flex-grow: 1; height: 0; border: none; border-top: 1px solid var(--border) }
+.exp-list { padding: var(--space-md); display: flex; flex-direction: column; gap: 3rem }
+.exp-item { display: flex; flex-direction: column; gap: 1rem }
+@media(min-width:768px) { .exp-item { flex-direction: row; gap: 3rem } }
+.exp-date-col { flex-shrink: 0 }
+@media(min-width:768px) { .exp-date-col { width: 12rem } }
+.exp-date {
+  display: inline-block; font-size: 13px; letter-spacing: .05em;
+  background: var(--bg-badge); color: var(--text); padding: 4px 8px; line-height: 1
+}
+.exp-body { display: flex; flex-direction: column; gap: 8px }
+.exp-body h3 { font-size: 20px; font-weight: 700; line-height: 1.4 }
+.exp-body .loc { font-size: 13px; letter-spacing: .05em; color: var(--text-secondary) }
+.exp-body ul { list-style: none; margin-top: 8px; display: flex; flex-direction: column; gap: 8px }
+.exp-body li { display: flex; gap: 8px; font-size: 14px; color: #d4d4d8; line-height: 1.5 }
+.exp-body li::before { content: '\2192'; color: var(--text) }
+
+/* Skills */
+.skills-section { border-bottom: 1px solid var(--border) }
+.skills-header {
+  padding: var(--space-md); border-bottom: 1px solid var(--border)
+}
+.skills-header h2 { font-size: 20px; font-weight: 700; letter-spacing: .1em; line-height: 1.4 }
+.skills-grid { display: grid; grid-template-columns: 1fr 1fr }
+@media(min-width:768px) { .skills-grid { grid-template-columns: 1fr 1fr 1fr 1fr } }
+.skills-col {
+  padding: 2rem;
+  display: flex; flex-direction: column; gap: 1.5rem;
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border)
+}
+@media(min-width:768px) { .skills-col { border-bottom: none } }
+.skills-col:nth-child(even) { border-right: none }
+@media(min-width:768px) { .skills-col:nth-child(even) { border-right: 1px solid var(--border) } }
+@media(min-width:768px) { .skills-col:nth-child(4n) { border-right: none } }
+.skills-col h4 { font-size: 13px; letter-spacing: .05em; color: var(--text) }
+.skills-list { display: flex; flex-direction: column; gap: 8px; font-size: 14px; color: var(--text-secondary) }
+
+/* Education + Status */
+.edu-status-grid { display: grid; grid-template-columns: 1fr; border-bottom: 1px solid var(--border) }
+@media(min-width:768px) { .edu-status-grid { grid-template-columns: 1fr 1fr } }
+.edu-col { padding: var(--space-md); border-bottom: 1px solid var(--border) }
+@media(min-width:768px) { .edu-col { border-bottom: none; border-right: 1px solid var(--border) } }
+.edu-col h3, .status-col h3 { font-size: 13px; letter-spacing: .05em; color: var(--text); margin-bottom: 1rem }
+.edu-card { border: 1px solid var(--border); padding: 1.5rem; background: rgba(24,24,27,0.1) }
+.edu-card h4 { font-size: 20px; font-weight: 700; line-height: 1.4 }
+.edu-card .school { color: var(--text-muted); font-size: 14px; margin-top: 4px }
+.edu-card .years { color: var(--text); font-size: 13px; letter-spacing: .05em; margin-top: 8px }
+.status-col { padding: var(--space-md) }
+.status-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem }
+.status-card {
+  border: 1px solid var(--border); padding: 1rem;
+  display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 4px;
+  transition: background .15s
+}
+.status-card:hover { background: var(--bg-hover) }
+.status-card .label { font-size: 10px; letter-spacing: .05em; color: var(--text-dim) }
+.status-card .value { font-size: 20px; font-weight: 700; color: var(--text); line-height: 1.4 }
+.btn-interview {
+  width: 100%; background: var(--text); color: #000;
+  font-weight: 700; padding: 1rem;
+  font-size: 13px; letter-spacing: .05em; border: none; cursor: pointer; font-family: var(--font);
+  transition: filter .15s
+}
+.btn-interview:hover { filter: invert(1) }
+
+/* Footer */
+.footer {
+  max-width: var(--max-w); margin: 0 auto;
+  border-left: 1px solid var(--border); border-right: 1px solid var(--border);
+  border-top: 1px solid var(--border);
+  padding: var(--space-md) var(--space-lg);
+  display: flex; flex-direction: column; gap: 1rem; align-items: center
+}
+@media(min-width:768px) { .footer { flex-direction: row; justify-content: space-between } }
+.footer-left { display: flex; flex-direction: column; gap: 4px; align-items: center }
+@media(min-width:768px) { .footer-left { align-items: flex-start } }
+.footer-name { font-size: 13px; letter-spacing: .05em; color: var(--text) }
+.footer-copy { font-size: 10px; letter-spacing: .1em; color: var(--text-dim) }
+.footer-links { display: flex; gap: 1.5rem; font-size: 13px; letter-spacing: .05em; color: var(--text-secondary) }
+.footer-links a:hover { color: var(--text); transition: color .15s }
+.footer-badge { font-size: 10px; color: #52525b }
+</style>
 </head>
-
 <body>
-  <header class="masthead">
-    <div class="masthead-top"><span>VOL. 1, NO. 1</span><span>AMARAVATI EDITION</span><span>EST. 1994</span></div>
-    <div class="title-wrapper">
-      <h1>RAMRATAN PADHY</h1>
-      <div class="social-links-top">
-        <a href="https://github.com/natarmr" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://www.linkedin.com/in/ramratan-ntlap/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      </div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-brand">&gt;_RAMRATAN</div>
+    <div class="nav-links">
+      <a class="active" href="#home">HOME</a>
+      <a href="#">BLOG</a>
+      <a href="#experience">EXPERIENCE</a>
+      <a href="#projects">PROJECTS</a>
     </div>
-    <div class="masthead-nav">
-      <nav>
-        <a href="#editorial">EDITORIAL</a>
-        <a href="#chronicles">CHRONICLES</a>
-        <a href="#experience">EXPERIENCE</a>
-        <a href="#technical">TECHNICAL</a>
-        <a href="mailto:ramratanpadhy59@gmail.com">CONTACT</a>
-        <a href="ramratan_resume.pdf" download>RESUME</a>
-      </nav>
-      <span class="weather">WEATHER: 72°F CLEAR</span>
-    </div>
-  </header>
-  <div class="ticker">
-    <div class="ticker-inner">
-      <span>OPEN FOR FULL-STACK OPPORTUNITIES — AI SPECIALIST — SYSTEMS PROGRAMMING — TECHNICAL COMMUNICATION — CONTACT:
-        RAMRATANPADHY59@GMAIL.COM</span>
-    </div>
+    <a class="nav-resume" href="ramratan_resume.pdf" download>RESUME</a>
   </div>
-  <main>
-    <div class="grid">
-      <div>
-        <section id="editorial">
-          <h2 class="section-title">RISING AI SPECIALIST REVOLUTIONIZES TECH INDUSTRY</h2>
-          <div style="display:flex;flex-direction:column;gap:16px;">
-            <div style="display:flex;flex-direction:column;gap:16px;">
-              <div>
-                <p class="drop-cap" style="font-size:17px">Ramratan Padhy is a Computer Science Engineering student at
-                  SRM University AP, with a strong focus on artificial intelligence, systems programming, and technical
-                  communication. He has maintained an exceptional academic record while actively engaging in advanced
-                  research and practical applications.</p>
-                <p style="font-size:17px;margin-top:14px">His portfolio of work spans from developing complex
-                  Retrieval-Augmented Generation (RAG) pipelines to mathematical modeling of drone trajectories. He has
-                  consistently demonstrated the ability to synthesize complex engineering concepts into accessible
-                  solutions, working effectively in both research and startup environments.</p>
-              </div>
-            </div>
-          </div>
-        </section>
+</nav>
 
-        <section id="performance"
-          style="margin-top:24px; margin-bottom:32px; border:2px solid #000; background:#000; color:var(--paper); padding:20px;">
-          <div style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:24px;">
-            <div style="flex:1; min-width:250px;">
-              <h3
-                style="font-size:1.1rem; font-weight:900; text-transform:uppercase; letter-spacing:-0.5px; border-bottom:1px solid var(--paper); padding-bottom:6px; margin-bottom:8px;">
-                ENGINEERED FOR SPEED</h3>
-              <p style="font-size:14px; font-style:italic; line-height:1.5; opacity:0.9;">This interface is a
-                zero-dependency, single-file brutalist artifact. Designed to bypass the bloat of modern web frameworks,
-                aggressively optimized for AEO crawlers and instant edge delivery.</p>
-            </div>
-            <div style="display:flex; flex-wrap:wrap; gap:24px; justify-content:center; flex:1;">
-              <div style="text-align:center;">
-                <div style="font-size:2.5rem; font-weight:900; line-height:1;">100</div>
-                <div
-                  style="font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:1px; margin-top:6px;">
-                  Lighthouse</div>
-              </div>
-              <div style="text-align:center;">
-                <div style="font-size:2.5rem; font-weight:900; line-height:1;">&lt;300<span
-                    style="font-size:1.2rem;">ms</span></div>
-                <div
-                  style="font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:1px; margin-top:6px;">
-                  Load Time</div>
-              </div>
-              <div style="text-align:center;">
-                <div style="font-size:2.5rem; font-weight:900; line-height:1;">0</div>
-                <div
-                  style="font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:1px; margin-top:6px;">
-                  Dependencies</div>
-              </div>
-            </div>
-          </div>
-        </section>
+<main class="container" style="padding-top:64px">
 
-        <section id="chronicles">
-          <div
-            style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;flex-wrap:wrap;gap:8px">
-            <h3 class="section-title" style="margin-bottom:0">TECHNICAL CHRONICLES</h3>
-            <span style="font-size:13px;font-weight:700;background:#000;color:var(--paper);padding:2px 8px">LATEST
-              DISPATCHES</span>
-          </div>
-          <div class="projects-grid">
-
-            <div class="project-card">
-              <h4>Argus</h4>
-              <p class="tech">Python, Gemma 4, IoT Sim</p>
-              <ul>
-                <li>Simulated a drone swarm that collectively maps any terrain using Gemma 4 31B vision via Cerebras.
-                </li>
-                <li>Engineered autonomous agent drones sharing a collective memory that aggregates into a unified
-                  semantic map displayed on a CesiumJS 3D globe.</li>
-                <li>Used Gemma 4 inference to classify areas on the terrain, map traffic congregation spots</li>
-                <li>Worked with FastAPI to serve as the backend for the simulation</li>
-              </ul>
-            </div>
-            <div class="project-card">
-              <h4>AXtheR (Windows)</h4>
-              <p class="tech">C, Windows API, Wintun, Cryptography</p>
-              <ul>
-                <li>Developed a high-performance, zero-dependency, easy to run UDP VPN for Windows by integrating the
-                  Wintun kernel driver and Winsock2.</li>
-                <li>Engineered a zero-heap allocation data path with multi-threaded asynchronous I/O and dynamic Windows
-                  routing table manipulation.</li>
-                <li>Implemented a self-contained, RFC-compliant ChaCha20-Poly1305 cryptographic engine from scratch in C
-                  with constant-time MAC verification.</li>
-              </ul>
-            </div>
-            <div class="project-card">
-              <h4>Grand Tribunal</h4>
-              <p class="tech">Python, Nemotron, Gradio, VoiceCPM</p>
-              <ul>
-                <li>Shipped an Ace Attorney-style turn-based AI debate game utilizing voice input for an immersive,
-                  hands-free player experience.</li>
-                <li>Trained and deployed two specialized Nemotron models on character personality datasets to serve as
-                  dynamic opponents and logical judges, interfaced through a custom Gradio frontend.</li>
-              </ul>
-            </div>
-            <div class="project-card">
-              <h4>BitNet-1.58b Research</h4>
-              <p class="tech">Python, Machine Learning, Mathematics</p>
-              <ul>
-                <li>Conducting novel research and experimentation on BitNet-1.58b by altering its context length.</li>
-              </ul>
-            </div>
-
-          </div>
-          <div class="cta-box" style="flex:1">
-            <h3>READ MY WORK</h3>
-            <p>Dive into my detailed technical explorations and published articles on modern AI architectures.</p>
-            <a href="https://medium.com/@ramratanpadhy59/the-mathematics-that-make-1-58-bit-weights-work-how-bitnet-b1-58-survives-its-own-quantization-de738e6adec1"
-              target="_blank" rel="noopener noreferrer">READ FULL ARTICLE</a>
-          </div>
-        </section>
-        <section id="experience">
-          <h3 class="section-title">PROFESSIONAL ENGAGEMENTS</h3>
-          <div class="exp-item">
-            <div class="exp-date">OCT 2025<small>RESEARCH ROLE</small></div>
-            <div class="exp-content">
-              <h4>ASSOCIATE — Next Tech Lab AP</h4>
-              <span class="loc">AMARAVATI, ANDHRA PRADESH</span>
-              <ul>
-                <li>Collaborating with a research collective to explore low-level implementations of emerging
-                  technologies.</li>
-                <li>Contributing to peer-to-peer technical workshops on systems programming and AI architecture.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="exp-item">
-            <div class="exp-date">MAY-AUG 2025<small>ENGAGEMENT</small></div>
-            <div class="exp-content">
-              <h4>TECHNICAL CONTENT WRITER — Notecove (Stealth Startup)</h4>
-              <span class="loc">REMOTE</span>
-              <ul>
-                <li>Authored 30+ comprehensive technical articles and guides on emerging software trends and AI ethics.
-                </li>
-                <li>Synthesized complex engineering concepts into accessible documentation for a specialized audience.
-                </li>
-                <li>Collaborated with the founding team to define the technical voice and content strategy for the
-                  platform.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="exp-item">
-            <div class="exp-date">MAR 2025-PRES<small>INTERNSHIP</small></div>
-            <div class="exp-content">
-              <h4>ML INTERN — Hush (Startup)</h4>
-              <span class="loc">REMOTE</span>
-              <ul>
-                <li>Worked with image models to discern user profiles to keep the app authentic.</li>
-                <li>Collaborated with the founding team to define and enhance user experience.</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-      </div>
-      <aside>
-        <div class="sidebar">
-          <h3>THE DEVELOPER'S CORNER</h3>
-          <div class="sidebar-section">
-            <h4>EDUCATION</h4>
-            <p style="font-size:14px;font-weight:700;text-transform:uppercase;line-height:1.3">B.Tech in Computer
-              Science</p>
-            <p style="font-size:13px;font-style:italic">SRM University AP, Andhra Pradesh</p>
-            <p style="font-size:11px;margin-top:4px">2025 - Present</p>
-          </div>
-          <div class="sidebar-section">
-            <h4>CURRENT STATUS</h4>
-            <div class="availability">
-              <div class="row"><span>Availability:</span><span>OPEN TO HIRE</span></div>
-              <div class="row"><span>Response Time:</span><span>&lt; 4 HOURS</span></div>
-              <div
-                style="margin-top:8px;background:#000;color:var(--paper);text-align:center;padding:6px;font-size:11px;font-weight:700;text-transform:uppercase">
-                <a href="mailto:ramratanpadhy59@gmail.com" style="color:var(--paper);text-decoration:none">REQUEST AN
-                  INTERVIEW</a>
-              </div>
-            </div>
-          </div>
-          <div class="sidebar-section">
-            <h4>CLASSIFIED ADS</h4>
-            <p class="classified"><span>WANTED:</span> High-impact engineering roles. Must value clean architecture and
-              brutalist aesthetics.</p>
-            <p class="classified"><span>FOR SALE:</span> Generic SaaS templates. Replace them with custom-built RAG
-              pipelines today.</p>
-          </div>
-          <div class="sidebar-section">
-            <h4>THIS SITE</h4>
-            <p class="classified"><span>STACK:</span> HTML/CSS Only</p>
-            <p class="classified"><span>PERFORMANCE:</span> Lightning Fast</p>
-            <p class="classified"><span>DEPENDENCIES:</span> Zero</p>
-          </div>
+  <section class="hero" id="home">
+    <div class="scanline"></div>
+    <div class="hero-inner">
+      <div class="hero-top">
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <span class="status-badge">STATUS: OPEN FOR FULL-STACK</span>
+          <h1 class="hero-name">RAMRATAN PADHY<span>_</span></h1>
+          <p class="hero-tagline">AI SPECIALIST // SYSTEMS PROGRAMMING // TECHNICAL COMMUNICATION</p>
         </div>
-      </aside>
-    </div>
-    <section id="technical" style="margin-top:48px;border-top:4px solid #000;padding-top:32px">
-      <h3 class="section-title" style="text-align:center">THE TECHNICAL ARSENAL</h3>
-      <div class="skills-grid">
-        <div class="skills-col">
-          <h5>LANGUAGES</h5>
-          <p>PYTHON</p>
-          <p>C</p>
-          <p>LATEX</p>
-        </div>
-        <div class="skills-col">
-          <h5>DEVELOPER TOOLS</h5>
-          <p>Git</p>
-          <p>Agentic Harness</p>
-          <p>FastAPI</p>
-          <p>APIs</p>
-          <p>VECTOR DATABASES</p>
-        </div>
-        <div class="skills-col">
-          <h5>CORE CONCEPTS</h5>
-          <p>DATA STRUCTURES</p>
-          <p>TRANSFORMER ARCHITECTURES</p>
-          <p>RAG</p>
-          <p>TECHNICAL DOCUMENTATION</p>
-          <p>MECHANISTIC INTERPRETABILITY</p>
-        </div>
-        <div class="skills-col" style="border-right:none">
-          <h5>SOFT SKILLS</h5>
-          <p>TECHNICAL COMMUNICATION</p>
-          <p>RESEARCH SYNTHESIS</p>
-          <p>PROBLEM SOLVING</p>
-          <p>TEAMWORK</p>
+        <div class="scoreboard">
+          <div class="score-item">
+            <span class="score-label">LIGHTHOUSE</span>
+            <span class="score-value">100</span>
+          </div>
+          <div class="score-divider"></div>
+          <div class="score-item">
+            <span class="score-label">LOAD TIME</span>
+            <span class="score-value">&lt;300ms</span>
+          </div>
+          <div class="score-divider"></div>
+          <div class="score-item">
+            <span class="score-label">DEPENDENCIES</span>
+            <span class="score-value">0</span>
+          </div>
         </div>
       </div>
-    </section>
-  </main>
-  <footer>
-    <div class="name">RAMRATAN PADHY</div>
-    <div class="links">
-      <a href="https://www.linkedin.com/in/ramratan-ntlap/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      <a href="https://github.com/natarmr" target="_blank" rel="noopener noreferrer">GitHub</a>
-      <a href="https://x.com/IamRamratan" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
-      <a href="mailto:ramratanpadhy59@gmail.com">Email</a>
-      <a href="ramratan_resume.pdf" download>Resume</a>
+      <div class="hero-cards">
+        <div class="hero-card">
+          <div class="hero-card-header">
+            <span>USER_BIO_V1.0</span>
+            <span style="color:var(--text-secondary)">&gt;_</span>
+          </div>
+          <p class="hero-card-text">
+            Computer Science Engineering student at SRM University AP, focused on artificial intelligence, systems programming, and technical communication. Synthesizing complex engineering concepts into accessible solutions.
+          </p>
+        </div>
+        <div class="hero-card terminal-card">
+          <div class="terminal-card-overlay"></div>
+          <div class="terminal-card-content">
+            <span style="font-size:13px;letter-spacing:.05em;color:var(--text-secondary);margin-bottom:8px">SYSTEM_OUTPUT</span>
+            <div class="terminal-line">
+              &gt;_ Searching for high-impact roles.<br>
+              &gt;_ Valuing clean architecture.<br>
+              &gt;_ Brutalist aesthetics applied.<span class="cursor"></span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <p class="copy">&copy; MCMXCIV-MMXXIV RAMRATAN PADHY. ALL RIGHTS RESERVED. PRINTED IN BITS.</p>
-    <div class="badge">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width:14px;height:14px">
-        <path
-          d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm4.24 8.71l-5.66 5.66a.996.996 0 01-1.41 0l-2.83-2.83a.996.996 0 111.41-1.41l2.12 2.12 4.95-4.95a.996.996 0 111.41 1.41z" />
-      </svg>
-      <span>AUTHENTIC CHRONICLE</span>
+  </section>
+
+  <section class="about-grid" id="about">
+    <div class="about-sidebar">
+      <h2>&gt;_ ABOUT</h2>
+      <div class="about-avatar"></div>
+      <div class="about-meta">
+        <div class="about-meta-row"><span>LOCATION</span><span class="val">AMARAVATI, IN</span></div>
+        <div class="about-meta-row"><span>ROLE</span><span class="val">AI SPECIALIST</span></div>
+        <div class="about-meta-row"><span>TEMP</span><span class="val">72&deg;F CLEAR</span></div>
+      </div>
     </div>
-  </footer>
+    <div class="about-main">
+      <h3>RISING AI SPECIALIST REVOLUTIONIZES TECH INDUSTRY</h3>
+      <p>Ramratan Padhy has maintained an exceptional academic record while actively engaging in advanced research and practical applications. His portfolio of work spans from developing complex Retrieval-Augmented Generation (RAG) pipelines to mathematical modeling of drone trajectories.</p>
+      <p>He has consistently demonstrated the ability to synthesize complex engineering concepts into accessible solutions, working effectively in both research and startup environments.</p>
+      <div class="about-quote">
+        <p>"This interface is a zero-dependency, single-file brutalist artifact&hellip; optimized for AEO crawlers and instant edge delivery."</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects-section" id="projects">
+    <div class="section-header">
+      <h2>TECHNICAL CHRONICLES</h2>
+      <span>VOL. 1, NO. 1</span>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card" style="border-right:1px solid var(--border)">
+        <span class="num">PROJECT_01</span>
+        <h3>ARGUS</h3>
+        <div class="project-tags">
+          <span>PYTHON</span>
+          <span>GEMMA 4</span>
+          <span>IoT SIM</span>
+        </div>
+        <p>Simulated a drone swarm that collectively maps any terrain using Gemma 4 31B vision via Cerebras. Engineered autonomous agent drones sharing a collective memory that aggregates into a unified semantic map displayed on a CesiumJS 3D globe.</p>
+        <a class="project-link" href="https://github.com/natarmr/argus" target="_blank" rel="noopener noreferrer">&rarr; VIEW DISPATCH</a>
+      </div>
+      <div class="project-card" style="border-right:1px solid var(--border)">
+        <span class="num">PROJECT_02</span>
+        <h3>AXtheR</h3>
+        <div class="project-tags">
+          <span>C</span>
+          <span>WIN32 API</span>
+          <span>CRYPTOGRAPHY</span>
+        </div>
+        <p>Zero-dependency UDP VPN for Windows using Wintun kernel driver. ChaCha20-Poly1305 cryptographic engine from scratch with zero-heap allocation data path and asynchronous I/O.</p>
+        <a class="project-link" href="https://github.com/natarmr/DSVPN" target="_blank" rel="noopener noreferrer">&rarr; VIEW DISPATCH</a>
+      </div>
+      <div class="project-card">
+        <span class="num">PROJECT_03</span>
+        <h3>GRAND TRIBUNAL</h3>
+        <div class="project-tags">
+          <span>NEMOTRON</span>
+          <span>GRADIO</span>
+          <span>VOICECPM</span>
+        </div>
+        <p>Ace Attorney-style turn-based AI debate game utilizing voice input. Two specialized Nemotron models serve as dynamic opponents and logical judges through a custom Gradio frontend.</p>
+        <a class="project-link" href="https://github.com/natarmr/TheGrandTribunal" target="_blank" rel="noopener noreferrer">&rarr; VIEW DISPATCH</a>
+      </div>
+    </div>
+    <div style="padding:var(--space-md);border-top:1px solid var(--border);text-align:center">
+      <a href="https://medium.com/@ramratanpadhy59/the-mathematics-that-make-1-58-bit-weights-work-how-bitnet-b1-58-survives-its-own-quantization-de738e6adec1" target="_blank" rel="noopener noreferrer" style="display:inline-block;font-size:13px;letter-spacing:.05em;padding:12px 28px;background:var(--text);color:#000;font-weight:700;transition:background .15s">READ FULL ARTICLE</a>
+    </div>
+  </section>
+
+  <section class="exp-section" id="experience">
+    <div class="exp-header">
+      <h2>PROFESSIONAL ENGAGEMENTS</h2>
+      <hr>
+    </div>
+    <div class="exp-list">
+      <div class="exp-item">
+        <div class="exp-date-col">
+          <span class="exp-date">MAR 2025-PRES</span>
+        </div>
+        <div class="exp-body">
+          <h3>ML INTERN — Hush (Startup)</h3>
+          <span class="loc">REMOTE</span>
+          <ul>
+            <li>Worked with image models to discern user profiles to keep the app authentic.</li>
+            <li>Collaborated with the founding team to define and enhance user experience.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="exp-item">
+        <div class="exp-date-col">
+          <span class="exp-date">MAY-AUG 2025</span>
+        </div>
+        <div class="exp-body">
+          <h3>TECHNICAL CONTENT WRITER — Notecove (Stealth Startup)</h3>
+          <span class="loc">REMOTE</span>
+          <ul>
+            <li>Authored 30+ comprehensive technical articles and guides on emerging software trends and AI ethics.</li>
+            <li>Synthesized complex engineering concepts into accessible documentation for a specialized audience.</li>
+            <li>Collaborated with the founding team to define the technical voice and content strategy for the platform.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="exp-item">
+        <div class="exp-date-col">
+          <span class="exp-date">OCT 2025</span>
+        </div>
+        <div class="exp-body">
+          <h3>ASSOCIATE — Next Tech Lab AP</h3>
+          <span class="loc">AMARAVATI, ANDHRA PRADESH</span>
+          <ul>
+            <li>Collaborating with a research collective to explore low-level implementations of emerging technologies.</li>
+            <li>Contributing to peer-to-peer technical workshops on systems programming and AI architecture.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills-section" id="technical">
+    <div class="skills-header">
+      <h2>THE TECHNICAL ARSENAL</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skills-col">
+        <h4>LANGUAGES</h4>
+        <div class="skills-list">
+          <span>PYTHON</span>
+          <span>C</span>
+          <span>LATEX</span>
+        </div>
+      </div>
+      <div class="skills-col">
+        <h4>DEVELOPER TOOLS</h4>
+        <div class="skills-list">
+          <span>GIT</span>
+          <span>AGENTIC HARNESS</span>
+          <span>FASTAPI</span>
+          <span>APIs</span>
+          <span>VECTOR DATABASES</span>
+        </div>
+      </div>
+      <div class="skills-col">
+        <h4>CORE CONCEPTS</h4>
+        <div class="skills-list">
+          <span>DATA STRUCTURES</span>
+          <span>TRANSFORMER ARCHITECTURES</span>
+          <span>RAG</span>
+          <span>TECHNICAL DOCUMENTATION</span>
+          <span>MECHANISTIC INTERPRETABILITY</span>
+        </div>
+      </div>
+      <div class="skills-col" style="border-right:none">
+        <h4>SOFT SKILLS</h4>
+        <div class="skills-list">
+          <span>TECHNICAL COMMUNICATION</span>
+          <span>RESEARCH SYNTHESIS</span>
+          <span>PROBLEM SOLVING</span>
+          <span>TEAMWORK</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="edu-status-grid">
+    <div class="edu-col">
+      <h3>EDUCATION</h3>
+      <div class="edu-card">
+        <h4>B.Tech in Computer Science</h4>
+        <p class="school">SRM University AP, Andhra Pradesh</p>
+        <p class="years">2025 &mdash; Present</p>
+      </div>
+    </div>
+    <div class="status-col">
+      <h3>CURRENT STATUS</h3>
+      <div class="status-cards">
+        <div class="status-card">
+          <span class="label">AVAILABILITY</span>
+          <span class="value">OPEN</span>
+        </div>
+        <div class="status-card">
+          <span class="label">RESPONSE</span>
+          <span class="value">&lt; 4H</span>
+        </div>
+      </div>
+      <a href="mailto:ramratanpadhy59@gmail.com"><button class="btn-interview">REQUEST AN INTERVIEW</button></a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-left">
+    <span class="footer-name">RAMRATAN PADHY</span>
+    <span class="footer-copy">&copy; MCMXCIV-MMXXIV ALL RIGHTS RESERVED</span>
+  </div>
+  <div class="footer-links">
+    <a href="https://github.com/natarmr" target="_blank" rel="noopener noreferrer">GITHUB</a>
+    <a href="https://www.linkedin.com/in/ramratan-ntlap/" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
+    <a href="https://x.com/IamRamratan" target="_blank" rel="noopener noreferrer">X</a>
+    <a href="mailto:ramratanpadhy59@gmail.com">EMAIL</a>
+  </div>
+  <div class="footer-badge">AUTHENTIC CHRONICLE // PRINTED IN BITS</div>
+</footer>
+
 </body>
-
 </html>
