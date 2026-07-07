@@ -25,31 +25,11 @@ Tested via [PageSpeed Insights](https://pagespeed.web.dev/analysis?url=https%3A%
 | Cumulative Layout Shift | 0 | 0 |
 | Speed Index | 0.8s | 0.3s |
 
-## Numbers
-
-| | |
-|---|---|
-| **Transfer size** | 6.2 KB (gzip) |
-| **HTML source** | 19.1 KB |
-| **HTTP requests** | 1 |
-| **JavaScript** | None |
-| **External dependencies** | None |
-| **Fonts loaded** | 0 (system stack) 
-
 ## AI Discoverability (AEO)
 
 Optimized for AI search engines and LLM crawlers. Thanks, [github.com/Spirizeon/agentic-aeo-skills](https://github.com/Spirizeon/agentic-aeo-skills)
 
-| Check | |
-|---|---|
-| `llms.txt` | ✅ Structured Markdown — bio, projects, skills, experience, links |
-| `robots.txt` | ✅ Explicitly allows GPTBot, ClaudeBot, PerplexityBot, Google-Extended, Applebot-Extended, Bytespider, CCBot, FacebookBot, Amazonbot |
-| `sitemap.xml` | ✅ lastmod, weekly changefreq, priority 1.0 |
-| Token count | ✅ ~4,900 tokens (fits any LLM context window) |
-| Semantic HTML | ✅ Proper `<nav>`, `<main>`, `<section>`, `<footer>` hierarchy |
-| Meta tags | ✅ Description, canonical URL, robots directive |
-
 ## Design
 
-Brutalist newspaper aesthetic. Warm paper tone, black ink, serif type. Fully responsive — grid collapses to single column on mobile. Inspired by [berzi.one](https://berzi.one) and [sanatkulkarni.tech](https://sanatkulkarni.tech).
+Brutalist newspaper aesthetic. Warm paper tone, black ink, serif type. Fully responsive — grid collapses to single column on mobile. Inspired by [berzi.one](https://berzi.one) and [harshalranjhani.in/](https://harshalranjhani.in/).
 
