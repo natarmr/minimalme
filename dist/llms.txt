@@ -81,6 +81,10 @@ serve as dynamic opponents and logical judges, interfaced through a custom Gradi
 ## Published Work
 - "The Mathematics That Make 1.58-bit Weights Work" — In-depth forensic analysis of BitNet b1.58's quantization survival mechanisms.
 
+## Blog
+- Blog: https://blogs.ramratan.in/ (RSS: https://blogs.ramratan.in/feed.xml)
+- "OpenNote: Private, Local-First AI Study Tool for Your Documents" — https://blogs.ramratan.in/opennote/
+
 ## Contact
 - LinkedIn: https://www.linkedin.com/in/ramratan-ntlap/
 - Email: ramratanpadhy59@gmail.com

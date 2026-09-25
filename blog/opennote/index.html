@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenNote: Private, Local-First AI Study Tool for Your Documents</title>
+  <meta name="description" content="Turn your PDFs and notes into a cited, private study assistant. OpenNote runs locally, cites every answer, and supports free Colab/Kaggle GPU hosting.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://blogs.ramratan.in/opennote/">
+  <meta property="og:title" content="OpenNote: Private, Local-First AI Study Tool for Your Documents">
+  <meta property="og:description" content="Turn your PDFs and notes into a cited, private study assistant. OpenNote runs locally, cites every answer, and supports free Colab/Kaggle GPU hosting.">
+  <meta property="og:url" content="https://blogs.ramratan.in/opennote/">
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2026-09-25">
+  <meta property="article:author" content="Ramratan Padhy">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:creator" content="@zirmythen">
+  <meta name="twitter:title" content="OpenNote: Private, Local-First AI Study Tool for Your Documents">
+  <meta name="twitter:description" content="Turn your PDFs and notes into a cited, private study assistant. OpenNote runs locally, cites every answer.">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "BlogPosting",
+  "headline": "OpenNote: Private, Local-First AI Study Tool for Your Documents",
+  "description": "Turn your PDFs and notes into a cited, private study assistant. OpenNote runs locally, cites every answer, and supports free Colab/Kaggle GPU hosting.",
+  "datePublished": "2026-09-25",
+  "author": {
+    "@type": "Person",
+    "name": "Ramratan Padhy",
+    "url": "https://ramratan.in/"
+  },
+  "mainEntityOfPage": "https://blogs.ramratan.in/opennote/",
+  "keywords": "local-first AI study tool, private document AI, citation-based study assistant, BYOK AI notebook"
+}
+  </script>
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+  <link rel="alternate" type="application/rss+xml" title="ramratan.in — blog" href="/feed.xml">
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
+
+    :root {
+      --bg: #000;
+      --bg-elevated: #131313;
+      --text: #fafafa;
+      --text-secondary: #c4c7c8;
+      --text-muted: #a1a1aa;
+      --text-dim: #71717a;
+      --border: #27272a;
+      --font: Consolas, 'Courier New', 'Lucida Console', monospace;
+      --max-w: 760px;
+      --space-md: 2rem;
+      --space-lg: 4rem
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none
+    }
+
+    .container {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      border-left: 1px solid var(--border);
+      border-right: 1px solid var(--border);
+      min-height: 100vh;
+      background: var(--bg)
+    }
+
+    /* Nav */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 50;
+      background: var(--bg-elevated);
+      border-bottom: 1px solid var(--border);
+      height: 64px
+    }
+
+    .nav-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      padding: 0 1rem
+    }
+
+    @media(min-width:768px) {
+      .nav-inner {
+        padding: 0 var(--space-lg)
+      }
+    }
+
+    .nav-brand {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.4
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 10px;
+      height: 1.1em;
+      background: var(--text);
+      vertical-align: text-bottom;
+      animation: blink 1s step-end infinite
+    }
+
+    @keyframes blink {
+      50% {
+        opacity: 0
+      }
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1rem;
+      font-size: 13px;
+      letter-spacing: .05em;
+      color: var(--text-secondary)
+    }
+
+    @media(min-width:768px) {
+      .nav-links {
+        gap: 2rem
+      }
+    }
+
+    .nav-links a:hover {
+      color: var(--text);
+      transition: color .15s
+    }
+
+    /* Post */
+    .post {
+      padding: var(--space-md) 1rem var(--space-lg)
+    }
+
+    @media(min-width:768px) {
+      .post {
+        padding: var(--space-md) var(--space-lg) var(--space-lg)
+      }
+    }
+
+    .post-kicker {
+      font-size: 13px;
+      letter-spacing: .05em;
+      color: var(--text-dim);
+      margin-bottom: 1rem
+    }
+
+    .post-kicker a:hover {
+      color: var(--text)
+    }
+
+    h1 {
+      font-size: 1.75rem;
+      line-height: 1.3;
+      margin-bottom: 1rem
+    }
+
+    @media(min-width:768px) {
+      h1 {
+        font-size: 2.25rem
+      }
+    }
+
+    .dek {
+      font-size: 1rem;
+      color: var(--text-secondary);
+      margin-bottom: 1.5rem;
+      line-height: 1.6
+    }
+
+    .byline {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem 1.5rem;
+      font-size: 13px;
+      letter-spacing: .05em;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: .75rem 0;
+      margin-bottom: var(--space-md)
+    }
+
+    .post-body p {
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+      color: var(--text-secondary)
+    }
+
+    .post-body p:first-of-type {
+      color: var(--text)
+    }
+
+    .post-body h2 {
+      font-size: 1.25rem;
+      line-height: 1.4;
+      margin: var(--space-md) 0 1rem;
+      padding-top: var(--space-md);
+      border-top: 1px solid var(--border)
+    }
+
+    .post-body a {
+      text-decoration: underline;
+      text-underline-offset: 3px
+    }
+
+    .post-body a:hover {
+      color: var(--text)
+    }
+
+    .post-nav {
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px solid var(--border);
+      margin-top: var(--space-md);
+      padding-top: var(--space-md);
+      font-size: 13px;
+      letter-spacing: .05em;
+      color: var(--text-secondary)
+    }
+
+    .post-nav a:hover {
+      color: var(--text)
+    }
+
+    /* Footer */
+    .footer {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      border-left: 1px solid var(--border);
+      border-right: 1px solid var(--border);
+      border-top: 1px solid var(--border);
+      padding: var(--space-md) 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center
+    }
+
+    @media(min-width:768px) {
+      .footer {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: var(--space-md) var(--space-lg)
+      }
+    }
+
+    .footer-name {
+      font-size: 13px;
+      letter-spacing: .05em;
+      color: var(--text)
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 1.5rem;
+      font-size: 13px;
+      letter-spacing: .05em;
+      color: var(--text-secondary)
+    }
+
+    .footer-links a:hover {
+      color: var(--text);
+      transition: color .15s
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="https://ramratan.in">&gt;_RAMRATAN<span class="cursor"></span></a>
+      <div class="nav-links">
+        <a href="/">POSTS</a>
+        <a href="/archive/">ARCHIVE</a>
+        <a href="/feed.xml">RSS</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container" style="padding-top:64px">
+
+    <article class="post">
+      <p class="post-kicker"><a href="/">&gt;_ BLOG</a> / POST_01</p>
+      <h1>OpenNote: Private, Local-First AI Study Tool for Your Documents</h1>
+      <p class="dek">OpenNote: Study From Your Own Documents, Without Sending Them Anywhere</p>
+      <div class="byline">
+        <span>BY RAMRATAN PADHY</span>
+        <span><time datetime="2026-09-25">25 SEP 2026</time></span>
+        <span>3 MIN READ</span>
+      </div>
+      <div class="post-body">
+        <p><a href="https://github.com/natarmr/opennote" target="_blank" rel="noopener noreferrer"><u>OpenNote</u></a> is a privacy focused, open source answer to Google’s NotebookLM. Instead of binding education to one model and one prompt, it takes the opposite approach. It&rsquo;s a terminal-based study companion that turns your own PDFs, documents, web pages, and notes into a private, searchable knowledge base that works with every major LLM provider available.</p>
+        <h2>Study From What You Actually Have</h2>
+        <p>Instead of chatting with a normal LLM and getting answers that drift beyond your material or are outright hallucinated, OpenNote reads your files directly. Drop in your PDFs, office documents, and saved web pages, and it organizes them into a local library it can search through. When you ask a question, it goes and finds the exact passages in your own material that answer it, then builds its response strictly from what it found there.</p>
+        <p>That last part matters. Every answer OpenNote gives you comes with a citation pointing back to the specific source it pulled from. If the answer isn&rsquo;t in your documents, OpenNote says so instead of making something up. A study tool that admits what it doesn&rsquo;t know is a lot more trustworthy than one that always sounds confident.</p>
+        <h2>Your Documents Never Leave Your Computer</h2>
+        <p>Because everything is processed and stored locally, your notes, textbooks, and research stay private by default. There&rsquo;s no upload step, no cloud storage of your files, nothing sitting on a third-party server. You bring your own AI provider key, whether that&rsquo;s OpenAI, Anthropic, Google, or others and OpenNote uses it only to generate answers, never to store your documents.</p>
+        <h2>More Than Just Answers</h2>
+        <p>OpenNote doesn&rsquo;t stop at Q&amp;A. Once it understands your material, it can turn it into study artifacts you&rsquo;d actually want to review before an exam: mind maps, study guides, FAQ sheets, topic briefings, timelines, and even narrated audio or short slideshow videos summarizing a topic. If your setup doesn&rsquo;t support audio or video generation, it gracefully falls back to a clean written version instead of just failing.</p>
+        <h2>Built to Work However You Want It To</h2>
+        <p>OpenNote doesn&rsquo;t lock you into one AI provider. It&rsquo;s BYOK (bring your own key), with support for five-plus providers, so you pick what fits your budget and needs. There is an option that allows you to directly point any /v1/models at OpenNote, so if you prefer to keep things fully offline, you can run a local model on your device and point that at OpenNote instead. Even if you don&rsquo;t have the hardware for that, you can spin up your own free Colab or Kaggle notebook and use it to power OpenNote. However you want to power it, that part&rsquo;s entirely up to you.</p>
+        <h2>Built for Studying, Not Just Chatting</h2>
+        <p>OpenNote runs from a clean, distraction-free terminal interface, with dedicated modes for asking questions, searching your library, and generating study materials. It also keeps you in control of your context via a live meter that shows exactly how much of the model&rsquo;s context window is filled, how many tokens you&rsquo;ve used, and what it&rsquo;s costing you, so you&rsquo;re never guessing what&rsquo;s actually being sent. It&rsquo;s a tool built around one job: helping you actually learn from what you already have, privately and honestly.</p>
+      </div>
+      <div class="post-nav">
+        <a href="/">&larr; ALL POSTS</a>
+        <a href="https://ramratan.in">ramratan.in &rarr;</a>
+      </div>
+    </article>
+
+  </main>
+
+  <footer class="footer">
+    <span class="footer-name">RAMRATAN PADHY</span>
+    <div class="footer-links">
+      <a href="https://github.com/natarmr" target="_blank" rel="noopener noreferrer">GITHUB</a>
+      <a href="https://ramratan.in">HOME</a>
+      <a href="/feed.xml">RSS</a>
+    </div>
+  </footer>
+
+</body>
+
+</html>

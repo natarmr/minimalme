@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Archive — Ramratan Padhy Blog</title>
+  <meta name="description" content="Every post on the ramratan.in blog, newest first.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://blogs.ramratan.in/archive/">
+  <meta property="og:title" content="Archive — Ramratan Padhy Blog">
+  <meta property="og:description" content="Every post on the ramratan.in blog, newest first.">
+  <meta property="og:url" content="https://blogs.ramratan.in/archive/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:creator" content="@zirmythen">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+  <link rel="alternate" type="application/rss+xml" title="ramratan.in — blog" href="/feed.xml">
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
+
+    :root {
+      --bg: #000;
+      --bg-elevated: #131313;
+      --bg-hover: #18181b;
+      --text: #fafafa;
+      --text-secondary: #c4c7c8;
+      --text-muted: #a1a1aa;
+      --text-dim: #71717a;
+      --border: #27272a;
+      --font: Consolas, 'Courier New', 'Lucida Console', monospace;
+      --max-w: 760px;
+      --space-md: 2rem;
+      --space-lg: 4rem
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none
+    }
+
+    .container {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      border-left: 1px solid var(--border);
+      border-right: 1px solid var(--border);
+      min-height: 100vh;
+      background: var(--bg)
+    }
+
+    /* Nav */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 50;
+      background: var(--bg-elevated);
+      border-bottom: 1px solid var(--border);
+      height: 64px
+    }
+
+    .nav-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      padding: 0 1rem
+    }
+
+    @media(min-width:768px) {
+      .nav-inner {
+        padding: 0 var(--space-lg)
+      }
+    }
+
+    .nav-brand {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.4
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 10px;
+      height: 1.1em;
+      background: var(--text);
+      vertical-align: text-bottom;
+      animation: blink 1s step-end infinite
+    }
+
+    @keyframes blink {
+      50% {
+        opacity: 0
+      }
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1rem;
+      font-size: 13px;
+      letter-spacing: .05em;
+      color: var(--text-secondary)
+    }
+
+    @media(min-width:768px) {
+      .nav-links {
+        gap: 2rem
+      }
+    }
+
+    .nav-links a.active {
+      color: var(--text);
+      border-bottom: 2px solid var(--text);
+      padding-bottom: 4px
+    }
+
+    .nav-links a:hover {
+      color: var(--text);
+      transition: color .15s
+    }
+
+    /* Archive */
+    .arch {
+      padding: var(--space-md) 1rem var(--space-lg)
+    }
+
+    @media(min-width:768px) {
+      .arch {
+        padding: var(--space-md) var(--space-lg) var(--space-lg)
+      }
+    }
+
+    .arch h1 {
+      font-size: 1.75rem;
+      margin-bottom: .5rem
+    }
+
+    .arch-sub {
+      font-size: 13px;
+      letter-spacing: .05em;
+      color: var(--text-muted);
+      margin-bottom: var(--space-md)
+    }
+
+    .year {
+      font-size: 13px;
+      letter-spacing: .1em;
+      color: var(--text);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: .5rem;
+      margin-bottom: 1rem
+    }
+
+    .entry {
+      display: flex;
+      gap: 1.5rem;
+      padding: .75rem 0;
+      border-bottom: 1px solid var(--border);
+      font-size: .95rem
+    }
+
+    .entry:hover {
+      background: var(--bg-hover)
+    }
+
+    .entry time {
+      flex-shrink: 0;
+      width: 7rem;
+      font-size: 13px;
+      letter-spacing: .05em;
+      color: var(--text-dim)
+    }
+
+    .entry a:hover {
+      text-decoration: underline;
+      text-underline-offset: 3px
+    }
+
+    /* Footer */
+    .footer {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      border-left: 1px solid var(--border);
+      border-right: 1px solid var(--border);
+      border-top: 1px solid var(--border);
+      padding: var(--space-md) 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center
+    }
+
+    @media(min-width:768px) {
+      .footer {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: var(--space-md) var(--space-lg)
+      }
+    }
+
+    .footer-name {
+      font-size: 13px;
+      letter-spacing: .05em;
+      color: var(--text)
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 1.5rem;
+      font-size: 13px;
+      letter-spacing: .05em;
+      color: var(--text-secondary)
+    }
+
+    .footer-links a:hover {
+      color: var(--text);
+      transition: color .15s
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="https://ramratan.in">&gt;_RAMRATAN<span class="cursor"></span></a>
+      <div class="nav-links">
+        <a href="/">POSTS</a>
+        <a class="active" href="/archive/">ARCHIVE</a>
+        <a href="/feed.xml">RSS</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container" style="padding-top:64px">
+
+    <div class="arch">
+      <h1>&gt;_ ARCHIVE</h1>
+      <p class="arch-sub">EVERY POST, NEWEST FIRST</p>
+      <p class="year">2026</p>
+      <div class="entry">
+        <time datetime="2026-09-25">25 SEP</time>
+        <a href="/opennote/">OpenNote: Private, Local-First AI Study Tool for Your Documents</a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <span class="footer-name">RAMRATAN PADHY</span>
+    <div class="footer-links">
+      <a href="https://github.com/natarmr" target="_blank" rel="noopener noreferrer">GITHUB</a>
+      <a href="https://ramratan.in">HOME</a>
+      <a href="/feed.xml">RSS</a>
+    </div>
+  </footer>
+
+</body>
+
+</html>
