@@ -1,0 +1,16 @@
+# Ramratan Padhy
+
+> Ramratan Padhy is a machine learning and agentic AI engineer, and a computer science student at SRM University AP, Andhra Pradesh.
+
+The canonical entry point for this site is [llms.txt](https://ramratan.in/llms.txt).
+A complete plain-text rendering of the site is available at
+[llms-full.txt](https://ramratan.in/llms-full.txt), and a Markdown rendering at
+[index.md](https://ramratan.in/index.md).
+
+## Links
+
+- [Website](https://ramratan.in/)
+- [Blog](https://blogs.ramratan.in/) — [RSS](https://blogs.ramratan.in/feed.xml)
+- [GitHub](https://github.com/natarmr)
+- [LinkedIn](https://www.linkedin.com/in/ramratan-ntlap/)
+- [Email](mailto:ramratanpadhy59@gmail.com)

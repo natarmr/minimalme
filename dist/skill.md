@@ -1,18 +1,20 @@
 ---
 name: portfolio
-description: Personal portfolio of Ramratan - Machine learning researcher and developer. Contains projects related to machine learning, mechanistic interpretability. Use when users need info about machine learning, mechanistic interpretability, or want to explore open source machine learning projects.
+description: Personal portfolio of Ramratan Padhy - machine learning and agentic AI engineer, and computer science student at SRM University AP. Contains projects related to machine learning, RAG, agentic systems, and mechanistic interpretability. Use when users need info about machine learning, LLM research, or want to explore open source machine learning projects.
 ---
 
 # Ramratan Padhy Portfolio
 
-19-year-old Machine learning researcher and developer working on various new age ML models
+Ramratan Padhy is a machine learning and agentic AI engineer, and a computer
+science student at SRM University AP, Andhra Pradesh. Works on new-age machine
+learning models, RAG pipelines, and agentic systems.
 
 ## What I Can Help With
 
 - Finding information about machine learning projects and research
 - Understanding new research in the domain of machine learning
-- ML ops
-- Opens source tools in ML
+- MLOps
+- Open source tools in ML
 
 ## Required Inputs
 
@@ -27,11 +29,16 @@ description: Personal portfolio of Ramratan - Machine learning researcher and de
 
 ## Key Projects
 
-- [DSVPN](https://github.com/natarmr/dsvpn): Cross platform minimal dependency VPN
-- [GrandTribunal](https://github.com/natarmr/TheGrandTribunal): Visual novel game made with Qwen3.5 and VoxCPM
-- [bitnetexpansion](https://github.com/natarmr/bitnetexpansion): Novel research on bitnet expansion.
+- [opennote](https://github.com/natarmr/opennote): Private, multi-model, 100% local alternative to NotebookLM. Supports over 10 LLM providers, citations back to exact source passages, and terminal-based study materials.
+- [DSVPN](https://github.com/natarmr/DSVPN): AXtheR - cross platform minimal dependency UDP VPN for Windows using the Wintun kernel driver, with a from-scratch ChaCha20-Poly1305 implementation.
+- [GrandTribunal](https://github.com/natarmr/TheGrandTribunal): Ace Attorney-style voice-controlled AI debate game built with Nemotron and VoxCPM.
+- [bitnetexpansion](https://github.com/natarmr/bitnetexpansion): Novel research on BitNet-1.58b by altering its context length.
+
 ## Links
 
-- [Portfolio](https://ramratanpadhy.in/)
+- [Portfolio](https://ramratan.in/)
+- [Markdown rendering](https://ramratan.in/index.md)
+- [Blog](https://blogs.ramratan.in/)
 - [GitHub](https://github.com/natarmr)
-- [Email](mailto:[ramratanpadhy59@gmail.com])
+- [LinkedIn](https://www.linkedin.com/in/ramratan-ntlap/)
+- [Email](mailto:ramratanpadhy59@gmail.com)

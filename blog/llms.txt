@@ -1,0 +1,67 @@
+# Ramratan Padhy — Blog
+
+> Notes on machine learning, agentic AI, and building in the open, by Ramratan Padhy.
+
+Ramratan Padhy is a machine learning and agentic AI engineer, and a computer
+science student at SRM University AP, Andhra Pradesh. This blog covers machine
+learning, agentic systems, RAG pipelines, LLM research, and open source work.
+
+## Links
+
+- [Blog home](https://blogs.ramratan.in/)
+- [Archive](https://blogs.ramratan.in/archive/)
+- [RSS feed](https://blogs.ramratan.in/feed.xml)
+- [Main site](https://ramratan.in/)
+- [Full text rendering of the main site](https://ramratan.in/llms-full.txt)
+- [GitHub](https://github.com/natarmr)
+- [LinkedIn](https://www.linkedin.com/in/ramratan-ntlap/)
+- [Email](mailto:ramratanpadhy59@gmail.com)
+
+## Posts
+
+### OpenNote: Private, Local-First AI Study Tool for Your Documents
+
+- URL: https://blogs.ramratan.in/opennote/
+- Published: 2026-09-25
+- Updated: 2026-10-15
+
+OpenNote is a privacy-focused open source answer to Google's NotebookLM. Instead
+of binding education to one model and one prompt, it takes the opposite
+approach. It's a terminal-based study companion that turns the reader's own
+PDFs, documents, web pages, and notes into a private, searchable knowledge base
+that works with every major LLM provider available.
+
+OpenNote reads the reader's files directly rather than chatting with a general
+LLM whose answers drift beyond the source material. It organizes PDFs, office
+documents, and saved web pages into a local library, and when asked a question
+it finds the exact passages in the user's own material that answer it, then
+builds its response strictly from what it found there. Every answer comes with a
+citation pointing back to the specific source passage it was drawn from, and if
+the answer is not in the documents, OpenNote says so instead of inventing one.
+
+Because everything is processed and stored locally, notes, textbooks, and
+research stay private by default. There is no upload step, no cloud storage of
+the user's files, and nothing sitting on a third-party server. The user brings
+their own AI provider key, whether that is OpenAI, Anthropic, Google, or
+another provider, and OpenNote uses it only to generate answers, never to store
+documents.
+
+Beyond question and answer, OpenNote can turn source material into study
+artifacts: mind maps, study guides, FAQ sheets, topic briefings, timelines, and
+narrated audio or short slideshow videos summarizing a topic. If the setup does
+not support audio or video generation, it falls back to a clean written version
+rather than failing.
+
+OpenNote does not lock users into one provider. It is bring-your-own-key with
+support for five-plus providers, and any `/v1/models`-compatible endpoint can be
+pointed at it, so a fully offline local model can be used instead. Users without
+the hardware for that can run a free Colab or Kaggle notebook and point OpenNote
+at it.
+
+The interface is a terminal with dedicated modes for asking questions, searching
+the library, and generating study materials, plus a live context meter showing
+exactly how much of the model's context window is filled, how many tokens have
+been used, and what it is costing.
+
+- Repository: https://github.com/natarmr/opennote
+- Installer: `curl -fsSL https://ramratan.in/install | bash`

@@ -2,24 +2,29 @@
 
 ## About
 - Name: Ramratan Padhy
-- Role: Computer Science Engineering Student at SRM University AP
+- Role: Machine Learning Engineer & Computer Science Student at SRM University AP
 - Location: Amaravati, Andhra Pradesh, India
 - Focus: Machine Learning, AI
 - Status: Open to Machine Learning Opportunities
 
 ## Links
-- Website: https://ramratan.in/
-- LinkedIn: https://www.linkedin.com/in/ramratan-ntlap/
-- GitHub: https://github.com/natarmr
-- X (Twitter): https://x.com/IamRamratan
-- Email: ramratanpadhy59@gmail.com
+- [Website](https://ramratan.in/)
+- [Markdown rendering](https://ramratan.in/index.md)
+- [Full text rendering](https://ramratan.in/llms-full.txt)
+- [Blog](https://blogs.ramratan.in/) — [RSS](https://blogs.ramratan.in/feed.xml)
+- [LinkedIn](https://www.linkedin.com/in/ramratan-ntlap/)
+- [GitHub](https://github.com/natarmr)
+- [X (Twitter)](https://x.com/IamRamratan)
+- [Medium](https://medium.com/@ramratanpadhy59)
+- [Email](mailto:ramratanpadhy59@gmail.com)
 
 ## Projects
 
 ### High-Performance Portfolio
 - Tech: HTML, CSS, Web Optimization
-- Architected a zero-dependency, single-file portfolio site optimized for instant edge delivery, achieving sub-300ms load times and a perfect 100/100 Lighthouse performance score.
-- Engineered a completely static, JavaScript-free architecture that inherently eliminates third-party vulnerabilities, maximizing security while ensuring optimal crawlability for modern AEO and SEO bots.
+- Architected a zero-dependency, single-file portfolio site with all CSS inlined, served from a static edge cache.
+- Engineered a completely static, JavaScript-free architecture: no third-party requests and no runtime dependencies, which keeps the attack surface limited to the hosting provider and the origin configuration.
+- A Content-Security-Policy of `default-src 'none'` is served, making script execution structurally unreachable.
 
 ### AI Advertisement Tool (RAG Pipeline)
 - Tech: Python, RAG, ETL
@@ -71,7 +76,7 @@ serve as dynamic opponents and logical judges, interfaced through a custom Gradi
 
 ### ML Intern — Hush, Startup (March 2026 – Present)
 - Location: Remote
-- Worked with image models to discern user profiles to keep the app authenticity.
+- Worked with image models to discern user profiles to keep the app authentic.
 - Collaborated with the founding team to define and enhance user experience.
 
 ## Education
