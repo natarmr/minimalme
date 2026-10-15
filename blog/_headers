@@ -6,4 +6,4 @@
   Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; img-src 'self' data:; base-uri 'none'; form-action 'none'
 
 /
-  Cache-Control: public, max-age=0, s-maxage=3600, must-revalidate
+  Cache-Control: public, max-age=300, s-maxage=86400, stale-while-revalidate=604800
