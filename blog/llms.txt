@@ -19,6 +19,17 @@ learning, agentic systems, RAG pipelines, LLM research, and open source work.
 
 ## Posts
 
+### Agents on one machine authenticate by co-location. I wanted signatures instead.
+
+- URL: https://blogs.ramratan.in/keryx/
+- Published: 2026-11-12
+- Updated: 2026-11-12
+
+Keryx is a local signed message bus that fixes co-location authentication with ed25519 signatures. Every message carries a signature verified by a daemon (keryxd) against the key registered for the claimed name in config.toml. The agent never holds its own key; a wrapper process holds it and signs on request via a private relay socket. The wrapper cannot be bypassed: the relay request has no fields for sender or signature, the daemon verifies with verify_strict, there is no trust-on-first-use, and only one live wrapper per identity is allowed under an advisory lock. Signatures cover length-prefixed canonical bytes with a domain separator, not JSON. Posts use a per-identity monotonic sequence number; reads use a signed timestamp plus nonce. Four audit fixes are covered: task ownership enforcement in the client-side fold, gating task state on trusted (self-originated) events, force_external downgrade and ProvenanceRejected enforcement, and refusal of Windows device names as identities.
+
+- Repository: https://github.com/natarmr/keryx
+- Blog: https://blogs.ramratan.in/keryx/
+
 ### OpenNote: Private, Local-First AI Study Tool for Your Documents
 
 - URL: https://blogs.ramratan.in/opennote/

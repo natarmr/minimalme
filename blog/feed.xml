@@ -5,7 +5,14 @@
     <link>https://blogs.ramratan.in/</link>
     <description>Notes on machine learning, agentic AI, and building in the open. By Ramratan Padhy.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 25 Sep 2026 09:00:00 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 09:00:00 +0530</lastBuildDate>
+    <item>
+      <title>Agents on one machine authenticate by co-location. I wanted signatures instead.</title>
+      <link>https://blogs.ramratan.in/keryx/</link>
+      <guid>https://blogs.ramratan.in/keryx/</guid>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0530</pubDate>
+      <description>Keryx is a local signed message bus where every message carries an ed25519 signature — the agent never holds its key, so a prompt-injected agent cannot impersonate another.</description>
+    </item>
     <item>
       <title>OpenNote: Private, Local-First AI Study Tool for Your Documents</title>
       <link>https://blogs.ramratan.in/opennote/</link>

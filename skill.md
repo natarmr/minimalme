@@ -30,6 +30,7 @@ learning models, RAG pipelines, and agentic systems.
 ## Key Projects
 
 - [opennote](https://github.com/natarmr/opennote): Private, multi-model, 100% local alternative to NotebookLM. Supports over 10 LLM providers, citations back to exact source passages, and terminal-based study materials.
+- [keryx](https://github.com/natarmr/keryx): Keryx - local signed message bus where every message carries an ed25519 signature; a wrapper holds the key so a prompt-injected agent cannot impersonate another identity.
 - [DSVPN](https://github.com/natarmr/DSVPN): AXtheR - cross platform minimal dependency UDP VPN for Windows using the Wintun kernel driver, with a from-scratch ChaCha20-Poly1305 implementation.
 - [GrandTribunal](https://github.com/natarmr/TheGrandTribunal): Ace Attorney-style voice-controlled AI debate game built with Nemotron and VoxCPM.
 - [bitnetexpansion](https://github.com/natarmr/bitnetexpansion): Novel research on BitNet-1.58b by altering its context length.

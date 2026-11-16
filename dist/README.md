@@ -33,14 +33,13 @@ features a context window along with a compaction and summarisation service.
 - **Tech:** Python, text user interface, agentic harness
 - **Repository:** [github.com/natarmr/opennote](https://github.com/natarmr/opennote)
 
-### AXtheR
+### Keryx
 
-A zero-dependency UDP VPN for Windows using the Wintun kernel driver, with a
-ChaCha20-Poly1305 cryptographic engine written from scratch, a zero-heap
-allocation data path, and asynchronous I/O.
+A local signed message bus where every message carries an ed25519 signature verified by a daemon (keryxd) against the key registered for the claimed name. A wrapper holds the key and signs via a private relay socket so a prompt-injected agent cannot impersonate another identity. Features length-prefixed canonical bytes with domain separation, per-identity sequence numbers, and provenance enforcement.
 
-- **Tech:** C, Win32 API, Wintun, cryptography
-- **Repository:** [github.com/natarmr/DSVPN](https://github.com/natarmr/DSVPN)
+- **Tech:** Rust, ed25519, IPC, agent security
+- **Repository:** [github.com/natarmr/keryx](https://github.com/natarmr/keryx)
+- **Blog post:** [blogs.ramratan.in/keryx](https://blogs.ramratan.in/keryx/)
 
 ### Grand Tribunal
 

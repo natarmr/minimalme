@@ -36,11 +36,12 @@
 - Developed an end-to-end pipeline where you can input a video, and make any query regarding it.
 - Worked with advanced data structures and various audio-video technologies to produce a system capable of answering queries about a video based on timeline and not only semantical similarity.
 
-### AXtheR (Windows)
-- Tech: C, Windows API, Wintun, Cryptography
-- Developed a high-performance, zero-dependency, easy to run UDP VPN for Windows by integrating the Wintun kernel driver and Winsock2.
-- Engineered a zero-heap allocation data path with multi-threaded asynchronous I/O and dynamic Windows routing table manipulation.
-- Implemented a self-contained, RFC-compliant ChaCha20-Poly1305 cryptographic engine from scratch in C with constant-time MAC verification.
+### Keryx
+- Tech: Rust, ed25519, IPC, agent security
+- Local signed message bus where every message carries an ed25519 signature verified by a daemon (keryxd) against the key registered for the claimed name in config.toml.
+- A wrapper holds the key and signs via a private relay socket so a prompt-injected agent cannot impersonate another identity; relay requests carry no sender or signature fields and the daemon uses verify_strict with no trust-on-first-use.
+- Length-prefixed canonical bytes with domain separation, per-identity monotonic sequence numbers for posts and timestamp+nonce for reads, and provenance enforcement including force_external.
+- Repository: https://github.com/natarmr/keryx — Blog: https://blogs.ramratan.in/keryx/
 
 ### GrandTribunal
 - Tech: Python, Gradio, Nemotron, VoxCPM
